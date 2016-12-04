@@ -1,2 +1,5 @@
-import Navbar from './Navbars';
-export default Navbar ;
+//import Navbar from './Navbars';
+import Menu from './VerticalMenu'
+//export default Navbar ;
+export default Menu;
+

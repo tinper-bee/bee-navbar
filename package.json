@@ -38,9 +38,10 @@
     "bee-form-group": "^1.0.5",
     "bee-grid": "0.0.2",
     "bee-layout": "0.0.2",
-    "bee-transition": "file:///Users/Echo/react-ahua/tinper-bee/bee-transition",
+    "bee-menus": "0.0.2",
     "classnames": "^2.2.5",
-    "tinper-bee-core": "latest"
+    "dom-scroll-into-view": "^1.2.1",
+    "tinper-bee-core": "0.0.11"
   },
   "devDependencies": {
     "chai": "^3.5.0",

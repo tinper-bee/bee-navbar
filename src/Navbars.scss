@@ -1,6 +1,8 @@
 @import "../node_modules/tinper-bee-core/scss/minxin-variables";
 @import "../node_modules/tinper-bee-core/scss/minxin-mixins";
 @import "../node_modules/bee-transition/src/Transition";
+@import "../node_modules/bee-menus/src/Menus";
+
 .navbar {
     position: relative;
     min-height: 50px;
@@ -288,3 +290,5 @@ a{
         margin: 0;
     }
 }
+
+

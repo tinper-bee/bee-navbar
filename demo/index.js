@@ -1,12 +1,20 @@
-import  Menu from '../src';
+import  Navbar from '../src';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import FormControl from 'bee-form-control';
 
-
+const Menu = Navbar.Menu;
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 
-class Demo4 extends Component {
+const NavItem = Navbar.NavItem;
+const Header = Navbar.Header;
+const Brand = Navbar.Brand;
+const Collapse = Navbar.Collapse;
+const Toggle = Navbar.Toggle;
+const Nav = Navbar.Nav;
+
+class Demo1 extends Component {
 	constructor(props, context) {
 	    super(props, context);
 	    this.state = {
@@ -18,10 +26,51 @@ class Demo4 extends Component {
 	}
 	render(){
 		return( 
-			<Menu onClick={this.handleClick}
+			<div>
+				<Navbar inverse expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+				    <Header>
+					    <Brand>
+					        	<a href="#">React-Bootstrap</a>
+					    </Brand>
+					    <Toggle />
+				    </Header>
+
+				    <Collapse>
+					    <Nav>
+						    <NavItem eventKey={1} href="#">Link</NavItem>
+						    <NavItem eventKey={2} href="#">Link</NavItem>
+						    
+					    </Nav>
+					    <Navbar.Form pullRight>
+					          <FormControl type="text" placeholder="Search" />
+					    </Navbar.Form>
+				    </Collapse>
+				</Navbar>
+
+			</div>
+		)
+	}
+}
+
+
+class Demo4 extends Component {
+	constructor(props, context) {
+	    super(props, context);
+	    this.state = {
+	    	current : 'mail'
+	    }
+	}
+	handleClick(e) {
+	    this.setState({
+	      current: e.key,
+	    });
+	  }
+	render(){
+		return( 
+			<Menu onClick={this.handleClick.bind(this)}
 		        selectedKeys={[this.state.current]}
 		        mode="horizontal"
-		      >
+		      >	
 		        <Menu.Item key="mail">
 		          Navigation One
 		        </Menu.Item>
@@ -60,7 +109,7 @@ class Demo5 extends Component {
 	  }
 	render(){
 		return( 
-			<Menu onClick={this.handleClick}
+			<Menu onClick={this.handleClick.bind(this)}
 		        style={{ width: 240 }}
 		        defaultOpenKeys={['sub1']}
 		        selectedKeys={[this.state.current]}
@@ -134,7 +183,7 @@ class Demo6 extends Component {
 		        selectedKeys={[this.state.current]}
 		        style={{ width: 240 }}
 		        onOpenChange={this.onOpenChange.bind(this)}
-		        onClick={this.handleClick}
+		        onClick={this.handleClick.bind(this)}
 		      >
 		        <SubMenu key="sub1" title={<span><span>Navigation One</span></span>}>
 		          <Menu.Item key="1">Option 1</Menu.Item>
@@ -211,7 +260,7 @@ class Demo8 extends Component {
 	  }
 	render(){
 		return( 
-			<Menu onClick={this.handleClick}
+			<Menu onClick={this.handleClick.bind(this)}
 		        style={{ width: 240 }}
 		        theme = "dark"
 		        defaultOpenKeys={['sub1']}
@@ -249,6 +298,7 @@ class Demo8 extends Component {
 
 
 
+ReactDOM.render(<Demo1 />, document.getElementById('ReactNavbarDemo1'));
 ReactDOM.render(<Demo4 />, document.getElementById('ReactNavbarDemo4'));
 ReactDOM.render(<Demo5 />, document.getElementById('ReactNavbarDemo5'));
 ReactDOM.render(<Demo6 />, document.getElementById('ReactNavbarDemo6'));

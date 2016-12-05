@@ -291,4 +291,9 @@ a{
     }
 }
 
+.ant-menu-inline .ant-menu-selected, .ant-menu-inline .ant-menu-item-selected {
+    border-right: 2px solid #108ee9;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
 

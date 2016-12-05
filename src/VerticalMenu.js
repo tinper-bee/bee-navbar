@@ -51,13 +51,13 @@ export interface MenuProps {
   prefixCls?: string;
 }
 
-export default class Menu extends React.Component<MenuProps, any> {
+class Menu extends React.Component<MenuProps, any> {
   static Divider = Divider;
   static Item = Item;
   static SubMenu = SubMenu;
   static ItemGroup = ItemGroup;
   static defaultProps = {
-    prefixCls: 'ant-menu',
+    prefixCls: 'u-menu',
     className: '',
     theme: 'light',  // or dark
   };
@@ -150,3 +150,4 @@ export default class Menu extends React.Component<MenuProps, any> {
     return <RcMenu {...this.props} {...props} />;
   }
 }
+export default Menu;

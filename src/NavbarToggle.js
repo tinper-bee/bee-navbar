@@ -14,7 +14,7 @@ const propTypes = {
 const contextTypes = {
   u_navbar: PropTypes.shape({
     expanded: PropTypes.bool,
-    onToggle: PropTypes.func.isRequired,
+    onToggle: PropTypes.func,
   }),
 };
 

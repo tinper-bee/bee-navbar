@@ -41,6 +41,11 @@ class Demo1 extends Component {
 						    <NavItem eventKey={2} href="#">Link</NavItem>
 						    
 					    </Nav>
+					    <Nav pullLeft>
+						    <NavItem eventKey={1} href="#">Link</NavItem>
+						    <NavItem eventKey={2} href="#">Link</NavItem>
+						    
+					    </Nav>
 					    <Navbar.Form pullRight>
 					          <FormControl type="text" placeholder="Search" />
 					    </Navbar.Form>

@@ -151,7 +151,7 @@ import "./node_modules/build/bee-navbars.css"
 |componentClass|自定义组件元素|element type|nav|
 |expanded|设置导航条是否展开，针对小屏幕|bool|false|
 |fixedBottom|设置固定在底部|bool|false|
-|fixedUp|设置固定在顶部|bool|false|
+|fixedTop|设置固定在顶部|bool|false|
 |inverse|黑色背景|bool|false|
 |onToggle|切换导航条显示隐藏 针对小屏幕|func|-|
 

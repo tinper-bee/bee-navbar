@@ -74,7 +74,7 @@ const propTypes = {
 const defaultProps = {
   pullRight: false,
   pullLeft: false,
-  clsPrefix: 'navbar',
+  clsPrefix: 'u-navbar',
 };
 
 const childContextTypes = {
@@ -113,7 +113,7 @@ class Nav extends React.Component {
     delete props.activeHref; // Accessed via this.getActiveProps().
 
 
-    const classes = {'nav':true,'navbar-nav':true};
+    const classes = {'u-nav':true,'u-navbar-nav':true};
 
     if(pullRight) {
         classes[`${clsPrefix}-right`] = true;

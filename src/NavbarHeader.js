@@ -3,7 +3,7 @@ import React from 'react';
 
 
 const defaultProps = {
-    clsPrefix: 'navbar-header'
+    clsPrefix: 'u-navbar-header'
 }
 
 class NavbarHeader extends React.Component {

@@ -70,7 +70,7 @@ const defaultProps = {
   staticTop: false,
   inverse: false,
   fluid: false,
-  clsPrefix: 'navbar'
+  clsPrefix: 'u-navbar'
 };
 
 const childContextTypes = {
@@ -172,9 +172,9 @@ function createSimpleWrapper(tag, suffix, displayName) {
       className={classnames(
         className,
         //prefix(navbarProps, suffix),
-        `navbar-${suffix}`,
-        pullRight &&  'navbar-right',
-        pullLeft && 'navbar-left',
+        `u-navbar-${suffix}`,
+        pullRight &&  'u-navbar-right',
+        pullLeft && 'u-navbar-left',
       )}
     />
   );

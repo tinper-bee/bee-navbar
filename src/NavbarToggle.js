@@ -19,7 +19,7 @@ const contextTypes = {
 };
 
 const defaultProps = {
-    clsPrefix: 'navbar-toggle'
+    clsPrefix: 'u-navbar-toggle'
 }
 
 class NavbarToggle extends React.Component {

@@ -3,7 +3,7 @@ import React, { PropTypes } from 'react';
 
 
 const defaultProps = {
-   clsPrefix : "navbar-brand"
+   clsPrefix : "u-navbar-brand"
 }
 
 class NavbarBrand extends React.Component {

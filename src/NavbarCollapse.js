@@ -9,7 +9,7 @@ const contextTypes = {
 };
 
 const defaultProps = {
-    clsPrefix : 'navbar-collapse'
+    clsPrefix : 'u-navbar-collapse'
 }
 class NavbarCollapse extends React.Component {
   render() {

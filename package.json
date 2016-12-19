@@ -43,7 +43,7 @@
   "classnames": "^2.2.5",
   "bee-transition": "latest",
   "dom-scroll-into-view": "^1.2.1",
-  "tinper-bee-core": "0.0.11"
+  "tinper-bee-core": "latest"
  },
  "devDependencies": {
   "chai": "^3.5.0",

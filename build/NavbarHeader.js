@@ -40,11 +40,10 @@ var NavbarHeader = function (_React$Component) {
   }
 
   NavbarHeader.prototype.render = function render() {
-    var _props = this.props;
-    var className = _props.className;
-    var clsPrefix = _props.clsPrefix;
-
-    var props = _objectWithoutProperties(_props, ['className', 'clsPrefix']);
+    var _props = this.props,
+        className = _props.className,
+        clsPrefix = _props.clsPrefix,
+        props = _objectWithoutProperties(_props, ['className', 'clsPrefix']);
 
     return _react2["default"].createElement('div', _extends({}, props, { className: (0, _classnames2["default"])(className, clsPrefix) }));
   };

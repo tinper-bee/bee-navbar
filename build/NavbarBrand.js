@@ -40,12 +40,11 @@ var NavbarBrand = function (_React$Component) {
   }
 
   NavbarBrand.prototype.render = function render() {
-    var _props = this.props;
-    var className = _props.className;
-    var children = _props.children;
-    var clsPrefix = _props.clsPrefix;
-
-    var props = _objectWithoutProperties(_props, ['className', 'children', 'clsPrefix']);
+    var _props = this.props,
+        className = _props.className,
+        children = _props.children,
+        clsPrefix = _props.clsPrefix,
+        props = _objectWithoutProperties(_props, ['className', 'children', 'clsPrefix']);
 
     if (_react2["default"].isValidElement(children)) {
       return _react2["default"].cloneElement(children, {

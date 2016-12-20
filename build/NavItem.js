@@ -61,9 +61,9 @@ var NavItem = function (_React$Component) {
   }
 
   NavItem.prototype.handleClick = function handleClick(e) {
-    var _context$u_nav = this.context.u_nav;
-    var onSelect = _context$u_nav.onSelect;
-    var selectedkey = _context$u_nav.selectedkey;
+    var _context$u_nav = this.context.u_nav,
+        onSelect = _context$u_nav.onSelect,
+        selectedkey = _context$u_nav.selectedkey;
 
 
     if (this.props.disabled) {
@@ -76,15 +76,14 @@ var NavItem = function (_React$Component) {
   };
 
   NavItem.prototype.render = function render() {
-    var _props = this.props;
-    var active = _props.active;
-    var disabled = _props.disabled;
-    var skey = _props.skey;
-    var className = _props.className;
-    var style = _props.style;
-    var children = _props.children;
-
-    var props = _objectWithoutProperties(_props, ['active', 'disabled', 'skey', 'className', 'style', 'children']);
+    var _props = this.props,
+        active = _props.active,
+        disabled = _props.disabled,
+        skey = _props.skey,
+        className = _props.className,
+        style = _props.style,
+        children = _props.children,
+        props = _objectWithoutProperties(_props, ['active', 'disabled', 'skey', 'className', 'style', 'children']);
 
     var selectedkey = this.context.u_nav.selectedkey;
 

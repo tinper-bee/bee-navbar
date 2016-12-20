@@ -48,11 +48,10 @@ var NavbarCollapse = function (_React$Component) {
   }
 
   NavbarCollapse.prototype.render = function render() {
-    var _props = this.props;
-    var children = _props.children;
-    var clsPrefix = _props.clsPrefix;
-
-    var props = _objectWithoutProperties(_props, ['children', 'clsPrefix']);
+    var _props = this.props,
+        children = _props.children,
+        clsPrefix = _props.clsPrefix,
+        props = _objectWithoutProperties(_props, ['children', 'clsPrefix']);
 
     var navbarProps = this.context.u_navbar;
 

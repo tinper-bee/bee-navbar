@@ -62,8 +62,8 @@ var propTypes = {
   stacked: _react2["default"].PropTypes.bool,
 
   justified: (0, _tinperBeeCore.all)(_react2["default"].PropTypes.bool, function (_ref) {
-    var justified = _ref.justified;
-    var navbar = _ref.navbar;
+    var justified = _ref.justified,
+        navbar = _ref.navbar;
     return justified && navbar ? Error('justified navbar `Nav`s are not supported') : null;
   }),
 
@@ -118,9 +118,9 @@ var Nav = function (_React$Component) {
   }
 
   Nav.prototype.getChildContext = function getChildContext() {
-    var _props = this.props;
-    var selectedkey = _props.selectedkey;
-    var onSelect = _props.onSelect;
+    var _props = this.props,
+        selectedkey = _props.selectedkey,
+        onSelect = _props.onSelect;
 
     return {
       u_nav: {
@@ -130,17 +130,16 @@ var Nav = function (_React$Component) {
   };
 
   Nav.prototype.render = function render() {
-    var _props2 = this.props;
-    var onSelect = _props2.onSelect;
-    var selectedkey = _props2.selectedkey;
-    var propsRole = _props2.role;
-    var pullRight = _props2.pullRight;
-    var pullLeft = _props2.pullLeft;
-    var className = _props2.className;
-    var children = _props2.children;
-    var clsPrefix = _props2.clsPrefix;
-
-    var props = _objectWithoutProperties(_props2, ['onSelect', 'selectedkey', 'role', 'pullRight', 'pullLeft', 'className', 'children', 'clsPrefix']);
+    var _props2 = this.props,
+        onSelect = _props2.onSelect,
+        selectedkey = _props2.selectedkey,
+        propsRole = _props2.role,
+        pullRight = _props2.pullRight,
+        pullLeft = _props2.pullLeft,
+        className = _props2.className,
+        children = _props2.children,
+        clsPrefix = _props2.clsPrefix,
+        props = _objectWithoutProperties(_props2, ['onSelect', 'selectedkey', 'role', 'pullRight', 'pullLeft', 'className', 'children', 'clsPrefix']);
 
     //const tabContainer = this.context.$bs_tabContainer;
     //const role = propsRole || (tabContainer ? 'tablist' : null);

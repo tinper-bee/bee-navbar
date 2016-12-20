@@ -57,9 +57,9 @@ var NavbarToggle = function (_React$Component) {
   }
 
   NavbarToggle.prototype.handleClick = function handleClick() {
-    var _context$u_navbar = this.context.u_navbar;
-    var expanded = _context$u_navbar.expanded;
-    var onToggle = _context$u_navbar.onToggle;
+    var _context$u_navbar = this.context.u_navbar,
+        expanded = _context$u_navbar.expanded,
+        onToggle = _context$u_navbar.onToggle;
 
 
     if (onToggle) {
@@ -68,13 +68,12 @@ var NavbarToggle = function (_React$Component) {
   };
 
   NavbarToggle.prototype.render = function render() {
-    var _props = this.props;
-    var onClick = _props.onClick;
-    var className = _props.className;
-    var children = _props.children;
-    var clsPrefix = _props.clsPrefix;
-
-    var props = _objectWithoutProperties(_props, ['onClick', 'className', 'children', 'clsPrefix']);
+    var _props = this.props,
+        onClick = _props.onClick,
+        className = _props.className,
+        children = _props.children,
+        clsPrefix = _props.clsPrefix,
+        props = _objectWithoutProperties(_props, ['onClick', 'className', 'children', 'clsPrefix']);
     //const navbarProps = this.context.u_navbar || { bsClass: 'navbar' };
     //console.log(navbarProps.onToggle, navbarProps.expanded);
 

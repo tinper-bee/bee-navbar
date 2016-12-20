@@ -138,9 +138,9 @@ var Navbar = function (_React$Component) {
   }
 
   Navbar.prototype.getChildContext = function getChildContext() {
-    var _props = this.props;
-    var expanded = _props.expanded;
-    var onToggle = _props.onToggle;
+    var _props = this.props,
+        expanded = _props.expanded,
+        onToggle = _props.onToggle;
 
 
     return {
@@ -160,18 +160,17 @@ var Navbar = function (_React$Component) {
   // }
 
   Navbar.prototype.render = function render() {
-    var _props2 = this.props;
-    var Component = _props2.componentClass;
-    var fixedTop = _props2.fixedTop;
-    var fixedBottom = _props2.fixedBottom;
-    var staticTop = _props2.staticTop;
-    var inverse = _props2.inverse;
-    var fluid = _props2.fluid;
-    var className = _props2.className;
-    var children = _props2.children;
-    var clsPrefix = _props2.clsPrefix;
-
-    var others = _objectWithoutProperties(_props2, ['componentClass', 'fixedTop', 'fixedBottom', 'staticTop', 'inverse', 'fluid', 'className', 'children', 'clsPrefix']);
+    var _props2 = this.props,
+        Component = _props2.componentClass,
+        fixedTop = _props2.fixedTop,
+        fixedBottom = _props2.fixedBottom,
+        staticTop = _props2.staticTop,
+        inverse = _props2.inverse,
+        fluid = _props2.fluid,
+        className = _props2.className,
+        children = _props2.children,
+        clsPrefix = _props2.clsPrefix,
+        others = _objectWithoutProperties(_props2, ['componentClass', 'fixedTop', 'fixedBottom', 'staticTop', 'inverse', 'fluid', 'className', 'children', 'clsPrefix']);
 
     // const [bsProps, elementProps] = splitBsPropsAndOmit(props, [
     //   'expanded', 'onToggle',
@@ -219,14 +218,14 @@ Navbar.childContextTypes = childContextTypes;
 
 function createSimpleWrapper(tag, suffix, displayName) {
   var Wrapper = function Wrapper(_ref, _ref2) {
-    var _ref2$u_navbar = _ref2.u_navbar;
-    var navbarProps = _ref2$u_navbar === undefined ? { preClass: 'navbar' } : _ref2$u_navbar;
-    var Component = _ref.componentClass;
-    var className = _ref.className;
-    var pullRight = _ref.pullRight;
-    var pullLeft = _ref.pullLeft;
+    var _ref2$u_navbar = _ref2.u_navbar,
+        navbarProps = _ref2$u_navbar === undefined ? { preClass: 'navbar' } : _ref2$u_navbar;
 
-    var props = _objectWithoutProperties(_ref, ['componentClass', 'className', 'pullRight', 'pullLeft']);
+    var Component = _ref.componentClass,
+        className = _ref.className,
+        pullRight = _ref.pullRight,
+        pullLeft = _ref.pullLeft,
+        props = _objectWithoutProperties(_ref, ['componentClass', 'className', 'pullRight', 'pullLeft']);
 
     return _react2["default"].createElement(Component, _extends({}, props, {
       className: (0, _classnames2["default"])(className,

@@ -37,9 +37,6 @@ class Demo2 extends Component {
 		            <Menu.Item key="setting:4">Option 4</Menu.Item>
 		          </MenuItemGroup>
 		        </SubMenu>
-		        <Menu.Item key="alipay">
-		          <a href="https://ant.design" target="_blank" rel="noopener noreferrer">Navigation Four - Link</a>
-		        </Menu.Item>
 		      </Menu>
 		)
 	}

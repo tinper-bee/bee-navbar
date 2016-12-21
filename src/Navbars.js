@@ -13,6 +13,7 @@ import NavbarToggle from './NavbarToggle';
 import Nav from './Nav';
 import NavItem from './NavItem';
 import Menu from './VerticalMenu';
+import NavSideContainer from './NavSideContainer';
 //import NavDropdown from './NavDropdown';
 
 const propTypes = {
@@ -201,6 +202,7 @@ function createSimpleWrapper(tag, suffix, displayName) {
   return Wrapper;
 }
 
+Navbar.SideContainer = NavSideContainer;
 Navbar.Brand = NavbarBrand;
 Navbar.Header = NavbarHeader;
 Navbar.Toggle = NavbarToggle;

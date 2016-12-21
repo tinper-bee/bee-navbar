@@ -4,11 +4,45 @@
 @import "../node_modules/bee-menus/src/Menus";
 
 $clsPrefix: 'u-navbar';
+.u-navbar-side-container{
+    height: 100%;
+    border: 1px solid #d9d9d9; 
+    box-shadow: 0 0 4px #d9d9d9;
+    width: 242px;
+    margin-left: 0;
+    transition: all .5s ease-in-out
+}
+.u-navbar-side-container.expanded{
+    margin-left: -260px;
+}
+.u-navbar-side-container .u-menu {
+    //height: 100%;
+    border: none; 
+    box-shadow: none;
+}
+.u-navbar .u-navbar-toggle.show{
+    float:left;
+    outline: none;
+    width: 20px;
+    width: 30px;
+    height: 30px;
+    //transition: transform .3s ease;
+    //transform: scale(0.66667) rotate(0deg);
+}
+.u-navbar .u-navbar-toggle.show.collapsed{
+    //transform: rotate(180deg) scale(0.75);
+    transition: all .5s ease
+}
 
+.u-navbar .u-navbar-toggle.show .uf-chevronpointingtotheleft{
+    font-size: 20px;
+    line-height: 20px;
+    color: #777777;
+}
 .#{$clsPrefix} {
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
+    //margin-bottom: 20px;
     border: 1px solid transparent;
     form {
         margin: 8px -15px;

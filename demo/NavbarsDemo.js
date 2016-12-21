@@ -6,6 +6,7 @@ import Form from 'bee-form';
 import FormControl from 'bee-form-control';
 import FormGroup from 'bee-form-group';
 
+const SideContainer = Navbar.SideContainer;
 const NavItem = Navbar.NavItem;
 const Header = Navbar.Header;
 const Brand = Navbar.Brand;

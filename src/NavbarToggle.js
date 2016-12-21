@@ -8,6 +8,7 @@ const propTypes = {
   /**
    * The toggle content, if left empty it will render the default toggle (seen above).
    */
+  show: PropTypes.bool,
   children: PropTypes.node,
 };
 
@@ -19,20 +20,30 @@ const contextTypes = {
 };
 
 const defaultProps = {
-    clsPrefix: 'u-navbar-toggle'
+    clsPrefix: 'u-navbar-toggle',
+    show:false
 }
 
 class NavbarToggle extends React.Component {
 
-    handleClick() {
-        const {expanded,onToggle } = this.context.u_navbar;
-
-        if (onToggle) {
-          onToggle(!expanded);
-        }
+  constructor(props){
+    super(props);
+    this.state = {
+      toggleState:false
     }
+    //this.handleRender = this.handleRender.bind(this);
+  }
+
+  handleClick() {
+      const {expanded,onToggle } = this.context.u_navbar;
+      this.setState({toggleState:!this.state.toggleState});
+      if (onToggle) {
+        onToggle(!expanded);
+      }
+  }
+  Component
   render() {
-    const { onClick, className, children,clsPrefix, ...props } = this.props;
+    const { onClick, className, children,clsPrefix, show,...props } = this.props;
     //const navbarProps = this.context.u_navbar || { bsClass: 'navbar' };
     //console.log(navbarProps.onToggle, navbarProps.expanded);
 
@@ -43,7 +54,8 @@ class NavbarToggle extends React.Component {
       className: classNames(
         className,
         clsPrefix,
-        !this.context.u_navbar.expanded && 'collapsed'
+        show && 'show',
+        !this.context.u_navbar.expanded && 'collapsed',
       )
     };
 
@@ -55,14 +67,35 @@ class NavbarToggle extends React.Component {
       );
     }
 
+    //当show存在时，渲染左侧静态面包按钮
     return (
-      <button {...buttonProps}>
-        <span className="sr-only">Toggle navigation</span>
-        <span className="icon-bar" />
-        <span className="icon-bar" />
-        <span className="icon-bar" />
-      </button>
-    );
+      <div>
+
+          {show && this.state.toggleState && (
+            <button {...buttonProps} >
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+            </button>
+          )}
+          {show && !this.state.toggleState && (
+            <button {...buttonProps}>
+              <span className="uf uf-chevronpointingtotheleft"></span>
+            </button>
+          )}
+          {!show && !this.state.toggleState && (
+            <button {...buttonProps} >
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+            </button>
+          )}
+      </div>
+    )
+    
+      
   }
 }
 

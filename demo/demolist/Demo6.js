@@ -1,0 +1,84 @@
+/**
+ * @title Navbar基础样式
+ * @description 当屏幕小于768 菜单隐藏。
+ */
+
+
+class Demo6 extends Component {
+	constructor(props, context) {
+	    super(props, context);
+	    this.state = {
+	    	expanded : false,
+	    	current : 1
+	    }
+	}
+	onToggle(value) {
+		this.setState({expanded:value});
+	}
+	handleClick(e) {
+	    console.log('click ', e);
+	    this.setState({
+	      current: e.key,
+	    });
+	}
+	render(){
+		return( 
+			<div id="demo6">
+				<Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+				   	<Toggle show/>
+				    <Header>
+					    <Brand>
+					        	<a href="#">React-Bootstrap</a>
+					    </Brand>
+				    </Header>
+					    <Nav>
+						    <NavItem eventKey={1} href="#">Link</NavItem>
+						    <NavItem eventKey={2} href="#">Link</NavItem>
+						    
+					    </Nav>
+					    <Nav pullLeft>
+						    <NavItem eventKey={1} href="#">Link</NavItem>
+						    <NavItem eventKey={2} href="#">Link</NavItem>
+						    
+					    </Nav>
+					    <Navbar.Form pullRight>
+					          <FormControl type="text" placeholder="Search" />
+					    </Navbar.Form>
+				</Navbar>
+				<SideContainer onToggle={this.onToggle.bind(this)} expanded={this.state.expanded}>
+					<Menu onClick={this.handleClick.bind(this)}
+				        style={{ width: 240 }}
+				        defaultOpenKeys={['demo3sub1']}
+				        selectedKeys={[this.state.current]}
+				        mode="inline"
+				      >
+				        <SubMenu key="demo3sub1" title={<span><span>Navigation One</span></span>}>
+				          <MenuItemGroup title="Item 1">
+				            <Menu.Item key="1">Option 1</Menu.Item>
+				            <Menu.Item key="2">Option 2</Menu.Item>
+				          </MenuItemGroup>
+				          <MenuItemGroup title="Item 2">
+				            <Menu.Item key="3">Option 3</Menu.Item>
+				            <Menu.Item key="4">Option 4</Menu.Item>
+				          </MenuItemGroup>
+				        </SubMenu>
+				        <SubMenu key="demo3sub2" title={<span><span>Navigation Two</span></span>}>
+				          <Menu.Item key="5">Option 5</Menu.Item>
+				          <Menu.Item key="6">Option 6</Menu.Item>
+				          <SubMenu key="demo3sub3" title="Submenu">
+				            <Menu.Item key="7">Option 7</Menu.Item>
+				            <Menu.Item key="8">Option 8</Menu.Item>
+				          </SubMenu>
+				        </SubMenu>
+				        <SubMenu key="demo3sub4" title={<span><span>Navigation Three</span></span>}>
+				          <Menu.Item key="9">Option 9</Menu.Item>
+				          <Menu.Item key="10">Option 10</Menu.Item>
+				          <Menu.Item key="11">Option 11</Menu.Item>
+				          <Menu.Item key="12">Option 12</Menu.Item>
+				        </SubMenu>
+				    </Menu>
+				</SideContainer>
+			</div>
+		)
+	}
+}

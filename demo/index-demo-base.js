@@ -6,6 +6,8 @@ import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Navbar from '../src';
 import FormControl from 'bee-form-control';
+import Icon from 'bee-icon';
+import Badge from 'bee-badge';
 
 const Menu = Navbar.Menu;
 const SubMenu = Menu.SubMenu;

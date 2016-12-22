@@ -230,7 +230,7 @@ a{
 }
 
 .u-nav>li>a {
-    padding: 10px 15px;
+    //padding: 10px 15px;
 }
 .u-nav>li, .u-nav>li>a {
     position: relative;
@@ -304,6 +304,7 @@ a{
         .#{$clsPrefix}-nav {
             >li {
                 float: left;
+                padding: 15px 10px;
             }
         }
         .#{$clsPrefix}-form {
@@ -346,8 +347,8 @@ a{
         margin-left: -15px;
     }
     .#{$clsPrefix}-nav>li>a {
-        padding-top: 15px;
-        padding-bottom: 15px;
+        //padding-top: 15px;
+        //padding-bottom: 15px;
     }
     .container-fluid>.#{$clsPrefix}-collapse, .container-fluid>.#{$clsPrefix}-header, .container>.#{$clsPrefix}-collapse, .container>.u-navbar-header {
         margin-right: 0;
@@ -359,4 +360,22 @@ a{
         margin-left: 0;
     }
 }
-
+.u-navbar .dropdown{
+    display:inline;
+    cursor: default;
+}
+.u-navbar .dropdown .u-menu-item-selected, .u-menu-horizontal .u-menu-submenu-horizontal.u-menu-submenu-selected{
+    border: none;
+    background: none;
+    color: #797979;
+}
+.u-navbar .dropdown .u-menu-submenu-active {
+    border: none;
+    color: #797979;
+}
+.u-navbar .dropdown .u-menu-submenu-active .u-menu-submenu-title{
+    background: none;
+}
+.u-navbar .dropdown .u-menu-submenu-horizontal > .u-menu {
+    min-width: 100px;
+}

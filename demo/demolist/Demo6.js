@@ -28,22 +28,23 @@ class Demo6 extends Component {
 				   	<Toggle show/>
 				    <Header>
 					    <Brand>
-					        	<a href="#">React-Bootstrap</a>
+					        	<a href="#"><img style={{width:140}} src="http://design.yyuap.com/logos/logox.png"/></a>
 					    </Brand>
 				    </Header>
-					    <Nav>
-						    <NavItem eventKey={1} href="#">Link</NavItem>
-						    <NavItem eventKey={2} href="#">Link</NavItem>
-						    
+					    
+					    <Nav pullRight>
+					    	<NavItem eventKey={1}><FormControl type="text" placeholder="Search" /></NavItem>
+						    <NavItem eventKey={2} href="#"><Badge dataBadge="4" colors="warning"><Icon type="bell-musical-tool"></Icon></Badge></NavItem>
+						    <NavItem eventKey={3} href="#"><Icon type="comments"></Icon></NavItem>
+						    <Menu mode="horizontal" className="dropdown">	
+						        <SubMenu title={<span>刘认华<Icon type="caret-down"></Icon></span>}>
+						        	<Menu.Item key="setting:1">Option 1</Menu.Item>
+						            <Menu.Item key="setting:2">Option 2</Menu.Item>
+						            <Menu.Item key="setting:3">Option 3</Menu.Item>
+						            <Menu.Item key="setting:4">Option 4</Menu.Item>
+						        </SubMenu>
+						      </Menu>
 					    </Nav>
-					    <Nav pullLeft>
-						    <NavItem eventKey={1} href="#">Link</NavItem>
-						    <NavItem eventKey={2} href="#">Link</NavItem>
-						    
-					    </Nav>
-					    <Navbar.Form pullRight>
-					          <FormControl type="text" placeholder="Search" />
-					    </Navbar.Form>
 				</Navbar>
 				<SideContainer onToggle={this.onToggle.bind(this)} expanded={this.state.expanded}>
 					<Menu onClick={this.handleClick.bind(this)}

@@ -33,6 +33,7 @@ var propTypes = {
   /**
    * The toggle content, if left empty it will render the default toggle (seen above).
    */
+  show: _react.PropTypes.bool,
   children: _react.PropTypes.node
 };
 
@@ -44,16 +45,23 @@ var contextTypes = {
 };
 
 var defaultProps = {
-  clsPrefix: 'u-navbar-toggle'
+  clsPrefix: 'u-navbar-toggle',
+  show: false
 };
 
 var NavbarToggle = function (_React$Component) {
   _inherits(NavbarToggle, _React$Component);
 
-  function NavbarToggle() {
+  function NavbarToggle(props) {
     _classCallCheck(this, NavbarToggle);
 
-    return _possibleConstructorReturn(this, _React$Component.apply(this, arguments));
+    var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
+
+    _this.state = {
+      toggleState: false
+    };
+    //this.handleRender = this.handleRender.bind(this);
+    return _this;
   }
 
   NavbarToggle.prototype.handleClick = function handleClick() {
@@ -61,7 +69,7 @@ var NavbarToggle = function (_React$Component) {
         expanded = _context$u_navbar.expanded,
         onToggle = _context$u_navbar.onToggle;
 
-
+    this.setState({ toggleState: !this.state.toggleState });
     if (onToggle) {
       onToggle(!expanded);
     }
@@ -73,7 +81,8 @@ var NavbarToggle = function (_React$Component) {
         className = _props.className,
         children = _props.children,
         clsPrefix = _props.clsPrefix,
-        props = _objectWithoutProperties(_props, ['onClick', 'className', 'children', 'clsPrefix']);
+        show = _props.show,
+        props = _objectWithoutProperties(_props, ['onClick', 'className', 'children', 'clsPrefix', 'show']);
     //const navbarProps = this.context.u_navbar || { bsClass: 'navbar' };
     //console.log(navbarProps.onToggle, navbarProps.expanded);
 
@@ -81,7 +90,7 @@ var NavbarToggle = function (_React$Component) {
       type: 'button'
     }, props, {
       onClick: (0, _tinperBeeCore.createChainedFunction)(onClick, this.handleClick.bind(this)),
-      className: (0, _classnames2["default"])(className, clsPrefix, !this.context.u_navbar.expanded && 'collapsed')
+      className: (0, _classnames2["default"])(className, clsPrefix, show && 'show', !this.context.u_navbar.expanded && 'collapsed')
     });
 
     if (children) {
@@ -92,17 +101,39 @@ var NavbarToggle = function (_React$Component) {
       );
     }
 
+    //当show存在时，渲染左侧静态面包按钮
     return _react2["default"].createElement(
-      'button',
-      buttonProps,
-      _react2["default"].createElement(
-        'span',
-        { className: 'sr-only' },
-        'Toggle navigation'
+      'div',
+      null,
+      show && this.state.toggleState && _react2["default"].createElement(
+        'button',
+        buttonProps,
+        _react2["default"].createElement(
+          'span',
+          { className: 'sr-only' },
+          'Toggle navigation'
+        ),
+        _react2["default"].createElement('span', { className: 'icon-bar' }),
+        _react2["default"].createElement('span', { className: 'icon-bar' }),
+        _react2["default"].createElement('span', { className: 'icon-bar' })
       ),
-      _react2["default"].createElement('span', { className: 'icon-bar' }),
-      _react2["default"].createElement('span', { className: 'icon-bar' }),
-      _react2["default"].createElement('span', { className: 'icon-bar' })
+      show && !this.state.toggleState && _react2["default"].createElement(
+        'button',
+        buttonProps,
+        _react2["default"].createElement('span', { className: 'uf uf-chevronpointingtotheleft' })
+      ),
+      !show && !this.state.toggleState && _react2["default"].createElement(
+        'button',
+        buttonProps,
+        _react2["default"].createElement(
+          'span',
+          { className: 'sr-only' },
+          'Toggle navigation'
+        ),
+        _react2["default"].createElement('span', { className: 'icon-bar' }),
+        _react2["default"].createElement('span', { className: 'icon-bar' }),
+        _react2["default"].createElement('span', { className: 'icon-bar' })
+      )
     );
   };
 

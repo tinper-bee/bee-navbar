@@ -46,6 +46,10 @@ var _VerticalMenu = require('./VerticalMenu');
 
 var _VerticalMenu2 = _interopRequireDefault(_VerticalMenu);
 
+var _NavSideContainer = require('./NavSideContainer');
+
+var _NavSideContainer2 = _interopRequireDefault(_NavSideContainer);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
 function _defaults(obj, defaults) { var keys = Object.getOwnPropertyNames(defaults); for (var i = 0; i < keys.length; i++) { var key = keys[i]; var value = Object.getOwnPropertyDescriptor(defaults, key); if (value && value.configurable && obj[key] === undefined) { Object.defineProperty(obj, key, value); } } return obj; }
@@ -255,6 +259,7 @@ function createSimpleWrapper(tag, suffix, displayName) {
   return Wrapper;
 }
 
+Navbar.SideContainer = _NavSideContainer2["default"];
 Navbar.Brand = _NavbarBrand2["default"];
 Navbar.Header = _NavbarHeader2["default"];
 Navbar.Toggle = _NavbarToggle2["default"];

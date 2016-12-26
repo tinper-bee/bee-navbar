@@ -10,7 +10,8 @@ $clsPrefix: 'u-navbar';
     box-shadow: 0 0 4px #d9d9d9;
     width: 242px;
     margin-left: 0;
-    transition: all .5s ease-in-out
+    transition: all .5s ease-in-out;
+    heigth: auto;
 }
 .u-navbar-side-container.expanded{
     margin-left: -260px;

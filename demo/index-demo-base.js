@@ -21,9 +21,9 @@ const Toggle = Navbar.Toggle;
 const Nav = Navbar.Nav;
 const SideContainer = Navbar.SideContainer;
 
-const CARET = <i className="uf uf-chevronarrowdown"></i>;
+const CARET = <i className="uf uf-arrow-down"></i>;
 
-const CARETUP = <i className="uf uf-chevronarrowup"></i>;
+const CARETUP = <i className="uf uf-arrow-down"></i>;
 
 
 {demolist}

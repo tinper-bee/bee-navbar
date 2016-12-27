@@ -38,10 +38,10 @@ class Demo6 extends Component {
                     <Nav pullRight>
                         <NavItem eventKey={1}><FormControl type="text" placeholder="Search"/></NavItem>
                         <NavItem eventKey={2} href="#"><Badge dataBadge="4" colors="warning"><Icon
-                            type="bell-musical-tool"></Icon></Badge></NavItem>
-                        <NavItem eventKey={3} href="#"><Icon type="comments"></Icon></NavItem>
+                            type="uf-bell"></Icon></Badge></NavItem>
+                        <NavItem eventKey={3} href="#"><Icon type="uf-bubble-o"></Icon></NavItem>
                         <Menu mode="horizontal" className="dropdown">
-                            <SubMenu title={<span>刘认华<Icon type="caret-down"></Icon></span>}>
+                            <SubMenu title={<span>刘认华<Icon type="uf-triangle-down"></Icon></span>}>
                                 <Menu.Item key="setting:1">Option 1</Menu.Item>
                                 <Menu.Item key="setting:2">Option 2</Menu.Item>
                                 <Menu.Item key="setting:3">Option 3</Menu.Item>

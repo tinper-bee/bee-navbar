@@ -23,7 +23,7 @@ const SideContainer = Navbar.SideContainer;
 
 const CARET = <i className="uf uf-arrow-down"></i>;
 
-const CARETUP = <i className="uf uf-arrow-down"></i>;
+const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
 /**

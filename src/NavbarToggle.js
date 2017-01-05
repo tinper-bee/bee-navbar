@@ -81,7 +81,7 @@ class NavbarToggle extends React.Component {
           )}
           {show && !this.state.toggleState && (
             <button {...buttonProps}>
-              <span className="uf uf-chevronpointingtotheleft"></span>
+              <span className="uf uf-arrow-left"></span>
             </button>
           )}
           {!show && !this.state.toggleState && (

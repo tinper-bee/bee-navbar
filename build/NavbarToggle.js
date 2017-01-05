@@ -120,7 +120,7 @@ var NavbarToggle = function (_React$Component) {
       show && !this.state.toggleState && _react2["default"].createElement(
         'button',
         buttonProps,
-        _react2["default"].createElement('span', { className: 'uf uf-chevronpointingtotheleft' })
+        _react2["default"].createElement('span', { className: 'uf uf-arrow-left' })
       ),
       !show && !this.state.toggleState && _react2["default"].createElement(
         'button',

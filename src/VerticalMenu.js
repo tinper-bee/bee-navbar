@@ -1,5 +1,5 @@
 import React from 'react';
-import RcMenu, { Item, Divider, SubMenu, ItemGroup } from 'bee-menus';
+import RcMenu, { Item, Divider, SubMenu, ItemGroup } from 'bee-menu';
 import animation from './_util/openAnimation';
 import warning from './_util/warning';
 

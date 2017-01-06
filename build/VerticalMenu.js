@@ -10,9 +10,9 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
-var _beeMenus = require('bee-menus');
+var _beeMenu = require('bee-menu');
 
-var _beeMenus2 = _interopRequireDefault(_beeMenus);
+var _beeMenu2 = _interopRequireDefault(_beeMenu);
 
 var _openAnimation = require('./_util/openAnimation');
 
@@ -124,16 +124,16 @@ var Menu = function (_React$Component) {
         className: className
       };
     }
-    return _react2["default"].createElement(_beeMenus2["default"], _extends({}, this.props, props));
+    return _react2["default"].createElement(_beeMenu2["default"], _extends({}, this.props, props));
   };
 
   return Menu;
 }(_react2["default"].Component);
 
-Menu.Divider = _beeMenus.Divider;
-Menu.Item = _beeMenus.Item;
-Menu.SubMenu = _beeMenus.SubMenu;
-Menu.ItemGroup = _beeMenus.ItemGroup;
+Menu.Divider = _beeMenu.Divider;
+Menu.Item = _beeMenu.Item;
+Menu.SubMenu = _beeMenu.SubMenu;
+Menu.ItemGroup = _beeMenu.ItemGroup;
 Menu.defaultProps = {
   prefixCls: 'u-menu',
   className: '',

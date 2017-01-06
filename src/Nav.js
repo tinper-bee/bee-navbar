@@ -1,5 +1,4 @@
 import classNames from 'classnames';
-import keycode from 'keycode';
 import React, { cloneElement,PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import { all } from 'tinper-bee-core';

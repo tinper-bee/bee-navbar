@@ -10,10 +10,6 @@ var _classnames = require('classnames');
 
 var _classnames2 = _interopRequireDefault(_classnames);
 
-var _keycode = require('keycode');
-
-var _keycode2 = _interopRequireDefault(_keycode);
-
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);

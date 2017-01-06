@@ -34,16 +34,14 @@
  },
  "dependencies": {
   "bee-badge": "latest",
-  "bee-button": "^0.2.2",
+  "bee-button": "latest",
   "bee-dropdown": "latest",
   "bee-form": "latest",
   "bee-form-control": "latest",
   "bee-form-group": "latest",
   "bee-grid": "latest",
   "bee-icon": "latest",
-  "bee-layout": "latest",
-  "bee-menus": "latest",
-  "bee-panel": "0.0.8",
+  "bee-menu": "latest",
   "bee-transition": "latest",
   "classnames": "^2.2.5",
   "dom-scroll-into-view": "^1.2.1",
@@ -58,7 +56,6 @@
   "console-polyfill": "~0.2.1",
   "es5-shim": "~4.1.10",
   "bee-panel": "latest",
-  "bee-layout": "latest",
-  "bee-button": "latest"
+  "bee-layout": "latest"
  }
 }

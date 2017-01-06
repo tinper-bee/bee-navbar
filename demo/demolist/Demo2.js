@@ -24,19 +24,19 @@ class Demo2 extends Component {
                   mode="horizontal"
                 >
                 <Menu.Item key="mail">
-                    Navigation One
+                    组织 1
                 </Menu.Item>
                 <Menu.Item key="app" disabled>
-                    Navigation Two
+                    组织 2
                 </Menu.Item>
-                <SubMenu title={<span>Navigation Three - Submenu</span>}>
-                    <MenuItemGroup title="Item 1">
-                        <Menu.Item key="setting:1">Option 1</Menu.Item>
-                        <Menu.Item key="setting:2">Option 2</Menu.Item>
+                <SubMenu title={<span>组织 1 - 子</span>}>
+                    <MenuItemGroup title="组 1">
+                        <Menu.Item key="setting:1">选项 1</Menu.Item>
+                        <Menu.Item key="setting:2">选项 2</Menu.Item>
                     </MenuItemGroup>
-                    <MenuItemGroup title="Item 2">
-                        <Menu.Item key="setting:3">Option 3</Menu.Item>
-                        <Menu.Item key="setting:4">Option 4</Menu.Item>
+                    <MenuItemGroup title="组 2">
+                        <Menu.Item key="setting:3">选项 3</Menu.Item>
+                        <Menu.Item key="setting:4">选项 4</Menu.Item>
                     </MenuItemGroup>
                 </SubMenu>
             </Menu>

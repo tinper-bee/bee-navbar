@@ -50,19 +50,19 @@ class Demo1 extends Component {
                 <Navbar inverse expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
                     <Header>
                         <Brand>
-                            <a href="#">React-Bootstrap</a>
+                            <a href="#">React-FED</a>
                         </Brand>
                         <Toggle />
                     </Header>
 
                     <Collapse>
                         <Nav>
-                            <NavItem eventKey={1} href="#">Link</NavItem>
-                            <NavItem eventKey={2} href="#">Link</NavItem>
+                            <NavItem eventKey={1} href="#">选项</NavItem>
+                            <NavItem eventKey={2} href="#">选项</NavItem>
                         </Nav>
                         <Nav pullLeft>
-                            <NavItem eventKey={1} href="#">Link</NavItem>
-                            <NavItem eventKey={2} href="#">Link</NavItem>
+                            <NavItem eventKey={1} href="#">选项</NavItem>
+                            <NavItem eventKey={2} href="#">选项</NavItem>
                         </Nav>
                         <Navbar.Form pullRight>
                             <FormControl type="text" placeholder="Search"/>
@@ -98,19 +98,19 @@ class Demo2 extends Component {
                   mode="horizontal"
                 >
                 <Menu.Item key="mail">
-                    Navigation One
+                    组织 1
                 </Menu.Item>
                 <Menu.Item key="app" disabled>
-                    Navigation Two
+                    组织 2
                 </Menu.Item>
-                <SubMenu title={<span>Navigation Three - Submenu</span>}>
-                    <MenuItemGroup title="Item 1">
-                        <Menu.Item key="setting:1">Option 1</Menu.Item>
-                        <Menu.Item key="setting:2">Option 2</Menu.Item>
+                <SubMenu title={<span>组织 1 - 子</span>}>
+                    <MenuItemGroup title="组 1">
+                        <Menu.Item key="setting:1">选项 1</Menu.Item>
+                        <Menu.Item key="setting:2">选项 2</Menu.Item>
                     </MenuItemGroup>
-                    <MenuItemGroup title="Item 2">
-                        <Menu.Item key="setting:3">Option 3</Menu.Item>
-                        <Menu.Item key="setting:4">Option 4</Menu.Item>
+                    <MenuItemGroup title="组 2">
+                        <Menu.Item key="setting:3">选项 3</Menu.Item>
+                        <Menu.Item key="setting:4">选项 4</Menu.Item>
                     </MenuItemGroup>
                 </SubMenu>
             </Menu>
@@ -139,29 +139,29 @@ class Demo3 extends Component {
     render() {
         return (
             <Menu onClick={this.handleClick.bind(this)} style={{ width: 240 }} defaultOpenKeys={['demo3sub1']} selectedKeys={[this.state.current]} mode="inline">
-                <SubMenu key="demo3sub1" title={<span><span>Navigation One</span></span>}>
-                    <MenuItemGroup title="Item 1">
-                        <Menu.Item key="1">Option 1</Menu.Item>
-                        <Menu.Item key="2">Option 2</Menu.Item>
+                <SubMenu key="demo3sub1" title={<span><span>组织 1</span></span>}>
+                    <MenuItemGroup title="组 1">
+                        <Menu.Item key="1">选项 1</Menu.Item>
+                        <Menu.Item key="2">选项 2</Menu.Item>
                     </MenuItemGroup>
-                    <MenuItemGroup title="Item 2">
-                        <Menu.Item key="3">Option 3</Menu.Item>
-                        <Menu.Item key="4">Option 4</Menu.Item>
+                    <MenuItemGroup title="组 2">
+                        <Menu.Item key="3">选项 3</Menu.Item>
+                        <Menu.Item key="4">选项 4</Menu.Item>
                     </MenuItemGroup>
                 </SubMenu>
-                <SubMenu key="demo3sub2" title={<span><span>Navigation Two</span></span>}>
-                    <Menu.Item key="5">Option 5</Menu.Item>
-                    <Menu.Item key="6">Option 6</Menu.Item>
-                    <SubMenu key="demo3sub3" title="Submenu">
-                        <Menu.Item key="7">Option 7</Menu.Item>
-                        <Menu.Item key="8">Option 8</Menu.Item>
+                <SubMenu key="demo3sub2" title={<span><span>组织 2</span></span>}>
+                    <Menu.Item key="5">选项 5</Menu.Item>
+                    <Menu.Item key="6">选项 6</Menu.Item>
+                    <SubMenu key="demo3sub3" title="子项">
+                        <Menu.Item key="7">选项 7</Menu.Item>
+                        <Menu.Item key="8">选项 8</Menu.Item>
                     </SubMenu>
                 </SubMenu>
-                <SubMenu key="demo3sub4" title={<span><span>Navigation Three</span></span>}>
-                    <Menu.Item key="9">Option 9</Menu.Item>
-                    <Menu.Item key="10">Option 10</Menu.Item>
-                    <Menu.Item key="11">Option 11</Menu.Item>
-                    <Menu.Item key="12">Option 12</Menu.Item>
+                <SubMenu key="demo3sub4" title={<span><span>组织 3</span></span>}>
+                    <Menu.Item key="9">选项 9</Menu.Item>
+                    <Menu.Item key="10">选项 10</Menu.Item>
+                    <Menu.Item key="11">选项 11</Menu.Item>
+                    <Menu.Item key="12">选项 12</Menu.Item>
                 </SubMenu>
             </Menu>
         )
@@ -206,25 +206,25 @@ class Demo4 extends Component {
     render() {
         return (
             <Menu mode="inline" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} onClick={this.handleClick.bind(this)}>
-                <SubMenu key="sub1" title={<span><span>Navigation One</span></span>}>
-                    <Menu.Item key="1">Option 1</Menu.Item>
-                    <Menu.Item key="2">Option 2</Menu.Item>
-                    <Menu.Item key="3">Option 3</Menu.Item>
-                    <Menu.Item key="4">Option 4</Menu.Item>
+                <SubMenu key="sub1" title={<span><span>组织 1</span></span>}>
+                    <Menu.Item key="1">选项 1</Menu.Item>
+                    <Menu.Item key="2">选项 2</Menu.Item>
+                    <Menu.Item key="3">选项 3</Menu.Item>
+                    <Menu.Item key="4">选项 4</Menu.Item>
                 </SubMenu>
-                <SubMenu key="sub2" title={<span><span>Navigation Two</span></span>}>
-                    <Menu.Item key="5">Option 5</Menu.Item>
-                    <Menu.Item key="6">Option 6</Menu.Item>
-                    <SubMenu key="sub3" title="Submenu">
-                        <Menu.Item key="7">Option 7</Menu.Item>
-                        <Menu.Item key="8">Option 8</Menu.Item>
+                <SubMenu key="sub2" title={<span><span>组织 2</span></span>}>
+                    <Menu.Item key="5">选项 5</Menu.Item>
+                    <Menu.Item key="6">选项 6</Menu.Item>
+                    <SubMenu key="sub3" title="子项">
+                        <Menu.Item key="7">选项 7</Menu.Item>
+                        <Menu.Item key="8">选项 8</Menu.Item>
                     </SubMenu>
                 </SubMenu>
-                <SubMenu key="sub4" title={<span><span>Navigation Three</span></span>}>
-                    <Menu.Item key="9">Option 9</Menu.Item>
-                    <Menu.Item key="10">Option 10</Menu.Item>
-                    <Menu.Item key="11">Option 11</Menu.Item>
-                    <Menu.Item key="12">Option 12</Menu.Item>
+                <SubMenu key="sub4" title={<span><span>组织 3</span></span>}>
+                    <Menu.Item key="9">选项 9</Menu.Item>
+                    <Menu.Item key="10">选项 10</Menu.Item>
+                    <Menu.Item key="11">选项 11</Menu.Item>
+                    <Menu.Item key="12">选项 12</Menu.Item>
                 </SubMenu>
             </Menu>
         )
@@ -242,29 +242,29 @@ class Demo5 extends Component {
     render() {
         return (
             <Menu onClick={this.handleClick.bind(this)} style={{ width: 240 }} mode="vertical">
-                <SubMenu key="sub1" title={<span><span>Navigation One</span></span>}>
+                <SubMenu key="sub1" title={<span><span>组织 1</span></span>}>
                     <MenuItemGroup title="Item 1">
-                        <Menu.Item key="1">Option 1</Menu.Item>
-                        <Menu.Item key="2">Option 2</Menu.Item>
+                        <Menu.Item key="1">选项 1</Menu.Item>
+                        <Menu.Item key="2">选项 2</Menu.Item>
                     </MenuItemGroup>
                     <MenuItemGroup title="Iteom 2">
-                        <Menu.Item key="3">Option 3</Menu.Item>
-                        <Menu.Item key="4">Option 4</Menu.Item>
+                        <Menu.Item key="3">选项 3</Menu.Item>
+                        <Menu.Item key="4">选项 4</Menu.Item>
                     </MenuItemGroup>
                 </SubMenu>
-                <SubMenu key="sub2" title={<span><span>Navigation Two</span></span>}>
-                    <Menu.Item key="5">Option 5</Menu.Item>
-                    <Menu.Item key="6">Option 6</Menu.Item>
+                <SubMenu key="sub2" title={<span><span>组织 2</span></span>}>
+                    <Menu.Item key="5">选项 5</Menu.Item>
+                    <Menu.Item key="6">选项 6</Menu.Item>
                     <SubMenu key="sub3" title="Submenu">
-                        <Menu.Item key="7">Option 7</Menu.Item>
-                        <Menu.Item key="8">Option 8</Menu.Item>
+                        <Menu.Item key="7">选项 7</Menu.Item>
+                        <Menu.Item key="8">选项 8</Menu.Item>
                     </SubMenu>
                 </SubMenu>
-                <SubMenu key="sub4" title={<span><span>Navigation Three</span></span>}>
-                    <Menu.Item key="9">Option 9</Menu.Item>
-                    <Menu.Item key="10">Option 10</Menu.Item>
-                    <Menu.Item key="11">Option 11</Menu.Item>
-                    <Menu.Item key="12">Option 12</Menu.Item>
+                <SubMenu key="sub4" title={<span><span>组织 3</span></span>}>
+                    <Menu.Item key="9">选项 9</Menu.Item>
+                    <Menu.Item key="10">选项 10</Menu.Item>
+                    <Menu.Item key="11">选项 11</Menu.Item>
+                    <Menu.Item key="12">选项 12</Menu.Item>
                 </SubMenu>
             </Menu>
         )
@@ -313,10 +313,10 @@ class Demo6 extends Component {
                         <NavItem eventKey={3} href="#"><Icon type="uf-bubble-o"></Icon></NavItem>
                         <Menu mode="horizontal" className="dropdown">
                             <SubMenu title={<span>刘认华<Icon type="uf-triangle-down"></Icon></span>}>
-                                <Menu.Item key="setting:1">Option 1</Menu.Item>
-                                <Menu.Item key="setting:2">Option 2</Menu.Item>
-                                <Menu.Item key="setting:3">Option 3</Menu.Item>
-                                <Menu.Item key="setting:4">Option 4</Menu.Item>
+                                <Menu.Item key="setting:1">选项 1</Menu.Item>
+                                <Menu.Item key="setting:2">选项 2</Menu.Item>
+                                <Menu.Item key="setting:3">选项 3</Menu.Item>
+                                <Menu.Item key="setting:4">选项 4</Menu.Item>
                             </SubMenu>
                         </Menu>
                     </Nav>
@@ -328,36 +328,36 @@ class Demo6 extends Component {
                           selectedKeys={[this.state.current]}
                           mode="inline"
                         >
-                        <SubMenu key="demo3sub1" title={<span><span>Navigation One</span></span>}>
-                            <MenuItemGroup title="Item 1">
-                                <Menu.Item key="1">Option 1</Menu.Item>
-                                <Menu.Item key="2">Option 2</Menu.Item>
+                        <SubMenu key="demo3sub1" title={<span><span>组织 1</span></span>}>
+                            <MenuItemGroup title="组 1">
+                                <Menu.Item key="1">选项 1</Menu.Item>
+                                <Menu.Item key="2">选项 2</Menu.Item>
                             </MenuItemGroup>
-                            <MenuItemGroup title="Item 2">
-                                <Menu.Item key="3">Option 3</Menu.Item>
-                                <Menu.Item key="4">Option 4</Menu.Item>
+                            <MenuItemGroup title="组 2">
+                                <Menu.Item key="3">选项 3</Menu.Item>
+                                <Menu.Item key="4">选项 4</Menu.Item>
                             </MenuItemGroup>
                         </SubMenu>
-                        <SubMenu key="demo3sub2" title={<span><span>Navigation Two</span></span>}>
-                            <Menu.Item key="5">Option 5</Menu.Item>
-                            <Menu.Item key="6">Option 6</Menu.Item>
-                            <SubMenu key="demo3sub3" title="Submenu">
-                                <Menu.Item key="7">Option 7</Menu.Item>
-                                <Menu.Item key="8">Option 8</Menu.Item>
+                        <SubMenu key="demo3sub2" title={<span><span>组织 2</span></span>}>
+                            <Menu.Item key="5">选项 5</Menu.Item>
+                            <Menu.Item key="6">选项 6</Menu.Item>
+                            <SubMenu key="demo3sub3" title="子项">
+                                <Menu.Item key="7">选项 7</Menu.Item>
+                                <Menu.Item key="8">选项 8</Menu.Item>
                             </SubMenu>
                         </SubMenu>
-                        <SubMenu key="demo3sub4" title={<span><span>Navigation Three</span></span>}>
-                            <Menu.Item key="9">Option 9</Menu.Item>
-                            <Menu.Item key="10">Option 10</Menu.Item>
-                            <Menu.Item key="11">Option 11</Menu.Item>
-                            <Menu.Item key="12">Option 12</Menu.Item>
+                        <SubMenu key="demo3sub4" title={<span><span>组织 3</span></span>}>
+                            <Menu.Item key="9">选项 9</Menu.Item>
+                            <Menu.Item key="10">选项 10</Menu.Item>
+                            <Menu.Item key="11">选项 11</Menu.Item>
+                            <Menu.Item key="12">选项 12</Menu.Item>
                         </SubMenu>
                     </Menu>
                 </SideContainer>
             </div>
         )
     }
-}var DemoArray = [{"example":<Demo1 />,"title":" Navbar基础样式","code":"/**\n * @title Navbar基础样式\n * @description 当屏幕小于768 菜单隐藏。\n */\n\n\nclass Demo1 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            expanded: false\n        }\n    }\n\n    onToggle(value) {\n        this.setState({expanded: value});\n    }\n\n    render() {\n        return (\n            <div>\n                <Navbar inverse expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>\n                    <Header>\n                        <Brand>\n                            <a href=\"#\">React-Bootstrap</a>\n                        </Brand>\n                        <Toggle />\n                    </Header>\n\n                    <Collapse>\n                        <Nav>\n                            <NavItem eventKey={1} href=\"#\">Link</NavItem>\n                            <NavItem eventKey={2} href=\"#\">Link</NavItem>\n                        </Nav>\n                        <Nav pullLeft>\n                            <NavItem eventKey={1} href=\"#\">Link</NavItem>\n                            <NavItem eventKey={2} href=\"#\">Link</NavItem>\n                        </Nav>\n                        <Navbar.Form pullRight>\n                            <FormControl type=\"text\" placeholder=\"Search\"/>\n                        </Navbar.Form>\n                    </Collapse>\n                </Navbar>\n            </div>\n        )\n    }\n}","desc":" 当屏幕小于768 菜单隐藏。"},{"example":<Demo2 />,"title":" 横向Menu纯菜单导航","code":"/**\n * @title 横向Menu纯菜单导航\n * @description 更简洁，更方便\n */\n\nclass Demo2 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            current: 'mail'\n        }\n    }\n\n    handleClick(e) {\n        this.setState({\n            current: e.key,\n        });\n    }\n\n    render() {\n        return (\n            <Menu onClick={this.handleClick.bind(this)}\n                  selectedKeys={[this.state.current]}\n                  mode=\"horizontal\"\n                >\n                <Menu.Item key=\"mail\">\n                    Navigation One\n                </Menu.Item>\n                <Menu.Item key=\"app\" disabled>\n                    Navigation Two\n                </Menu.Item>\n                <SubMenu title={<span>Navigation Three - Submenu</span>}>\n                    <MenuItemGroup title=\"Item 1\">\n                        <Menu.Item key=\"setting:1\">Option 1</Menu.Item>\n                        <Menu.Item key=\"setting:2\">Option 2</Menu.Item>\n                    </MenuItemGroup>\n                    <MenuItemGroup title=\"Item 2\">\n                        <Menu.Item key=\"setting:3\">Option 3</Menu.Item>\n                        <Menu.Item key=\"setting:4\">Option 4</Menu.Item>\n                    </MenuItemGroup>\n                </SubMenu>\n            </Menu>\n        )\n    }\n}","desc":" 更简洁，更方便"},{"example":<Demo3 />,"title":" 竖向Menu基础样式","code":"/**\n * @title 竖向Menu基础样式\n * @description 子菜单竖向显示，可折叠。\n */\n\nclass Demo3 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            current: 1\n        }\n    }\n\n    handleClick(e) {\n        console.log('click ', e);\n        this.setState({\n            current: e.key,\n        });\n    }\n\n    render() {\n        return (\n            <Menu onClick={this.handleClick.bind(this)} style={{ width: 240 }} defaultOpenKeys={['demo3sub1']} selectedKeys={[this.state.current]} mode=\"inline\">\n                <SubMenu key=\"demo3sub1\" title={<span><span>Navigation One</span></span>}>\n                    <MenuItemGroup title=\"Item 1\">\n                        <Menu.Item key=\"1\">Option 1</Menu.Item>\n                        <Menu.Item key=\"2\">Option 2</Menu.Item>\n                    </MenuItemGroup>\n                    <MenuItemGroup title=\"Item 2\">\n                        <Menu.Item key=\"3\">Option 3</Menu.Item>\n                        <Menu.Item key=\"4\">Option 4</Menu.Item>\n                    </MenuItemGroup>\n                </SubMenu>\n                <SubMenu key=\"demo3sub2\" title={<span><span>Navigation Two</span></span>}>\n                    <Menu.Item key=\"5\">Option 5</Menu.Item>\n                    <Menu.Item key=\"6\">Option 6</Menu.Item>\n                    <SubMenu key=\"demo3sub3\" title=\"Submenu\">\n                        <Menu.Item key=\"7\">Option 7</Menu.Item>\n                        <Menu.Item key=\"8\">Option 8</Menu.Item>\n                    </SubMenu>\n                </SubMenu>\n                <SubMenu key=\"demo3sub4\" title={<span><span>Navigation Three</span></span>}>\n                    <Menu.Item key=\"9\">Option 9</Menu.Item>\n                    <Menu.Item key=\"10\">Option 10</Menu.Item>\n                    <Menu.Item key=\"11\">Option 11</Menu.Item>\n                    <Menu.Item key=\"12\">Option 12</Menu.Item>\n                </SubMenu>\n            </Menu>\n        )\n    }\n}","desc":" 子菜单竖向显示，可折叠。"},{"example":<Demo4 />,"title":" 竖向手风琴Menu","code":"/**\n * @title 竖向手风琴Menu\n * @description 菜单展开是手风琴形式。\n */\n\nclass Demo4 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            current: '1',\n            openKeys: []\n        }\n    }\n    handleClick(e) {\n        console.log('Clicked: ', e);\n        this.setState({current: e.key});\n    }\n    onOpenChange(openKeys) {\n        const state = this.state;\n        const latestOpenKey = openKeys.find(key => !(state.openKeys.indexOf(key) > -1));\n        const latestCloseKey = state.openKeys.find(key => !(openKeys.indexOf(key) > -1));\n\n        let nextOpenKeys = [];\n        if (latestOpenKey) {\n            nextOpenKeys = this.getAncestorKeys(latestOpenKey).concat(latestOpenKey);\n        }\n        if (latestCloseKey) {\n            nextOpenKeys = this.getAncestorKeys(latestCloseKey);\n        }\n        this.setState({openKeys: nextOpenKeys});\n    }\n    getAncestorKeys(key) {\n        const map = {\n            sub3: ['sub2'],\n        };\n        return map[key] || [];\n    }\n    render() {\n        return (\n            <Menu mode=\"inline\" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} onClick={this.handleClick.bind(this)}>\n                <SubMenu key=\"sub1\" title={<span><span>Navigation One</span></span>}>\n                    <Menu.Item key=\"1\">Option 1</Menu.Item>\n                    <Menu.Item key=\"2\">Option 2</Menu.Item>\n                    <Menu.Item key=\"3\">Option 3</Menu.Item>\n                    <Menu.Item key=\"4\">Option 4</Menu.Item>\n                </SubMenu>\n                <SubMenu key=\"sub2\" title={<span><span>Navigation Two</span></span>}>\n                    <Menu.Item key=\"5\">Option 5</Menu.Item>\n                    <Menu.Item key=\"6\">Option 6</Menu.Item>\n                    <SubMenu key=\"sub3\" title=\"Submenu\">\n                        <Menu.Item key=\"7\">Option 7</Menu.Item>\n                        <Menu.Item key=\"8\">Option 8</Menu.Item>\n                    </SubMenu>\n                </SubMenu>\n                <SubMenu key=\"sub4\" title={<span><span>Navigation Three</span></span>}>\n                    <Menu.Item key=\"9\">Option 9</Menu.Item>\n                    <Menu.Item key=\"10\">Option 10</Menu.Item>\n                    <Menu.Item key=\"11\">Option 11</Menu.Item>\n                    <Menu.Item key=\"12\">Option 12</Menu.Item>\n                </SubMenu>\n            </Menu>\n        )\n    }\n}","desc":" 菜单展开是手风琴形式。"},{"example":<Demo5 />,"title":" 子菜单呼出形式Menu","code":"/**\n * @title 子菜单呼出形式Menu\n * @description 子菜单在右侧呼出形式显示。\n */\n\nclass Demo5 extends Component {\n\n    handleClick() {\n        console.log('click', e);\n    }\n    render() {\n        return (\n            <Menu onClick={this.handleClick.bind(this)} style={{ width: 240 }} mode=\"vertical\">\n                <SubMenu key=\"sub1\" title={<span><span>Navigation One</span></span>}>\n                    <MenuItemGroup title=\"Item 1\">\n                        <Menu.Item key=\"1\">Option 1</Menu.Item>\n                        <Menu.Item key=\"2\">Option 2</Menu.Item>\n                    </MenuItemGroup>\n                    <MenuItemGroup title=\"Iteom 2\">\n                        <Menu.Item key=\"3\">Option 3</Menu.Item>\n                        <Menu.Item key=\"4\">Option 4</Menu.Item>\n                    </MenuItemGroup>\n                </SubMenu>\n                <SubMenu key=\"sub2\" title={<span><span>Navigation Two</span></span>}>\n                    <Menu.Item key=\"5\">Option 5</Menu.Item>\n                    <Menu.Item key=\"6\">Option 6</Menu.Item>\n                    <SubMenu key=\"sub3\" title=\"Submenu\">\n                        <Menu.Item key=\"7\">Option 7</Menu.Item>\n                        <Menu.Item key=\"8\">Option 8</Menu.Item>\n                    </SubMenu>\n                </SubMenu>\n                <SubMenu key=\"sub4\" title={<span><span>Navigation Three</span></span>}>\n                    <Menu.Item key=\"9\">Option 9</Menu.Item>\n                    <Menu.Item key=\"10\">Option 10</Menu.Item>\n                    <Menu.Item key=\"11\">Option 11</Menu.Item>\n                    <Menu.Item key=\"12\">Option 12</Menu.Item>\n                </SubMenu>\n            </Menu>\n        )\n    }\n}","desc":" 子菜单在右侧呼出形式显示。"},{"example":<Demo6 />,"title":" Navbar基础样式","code":"/**\n * @title Navbar基础样式\n * @description 当屏幕小于768 菜单隐藏。\n */\n\n\nclass Demo6 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            expanded: false,\n            current: 1\n        }\n    }\n\n    onToggle(value) {\n        this.setState({expanded: value});\n    }\n\n    handleClick(e) {\n        console.log('click ', e);\n        this.setState({\n            current: e.key\n        });\n    }\n\n    render() {\n        return (\n            <div id=\"demo6\">\n                <Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>\n                    <Toggle show/>\n                    <Header>\n                        <Brand>\n                            <a href=\"#\"><img style={{width:140}} src=\"http://design.yyuap.com/logos/logox.png\"/></a>\n                        </Brand>\n                    </Header>\n\n                    <Nav pullRight>\n                        <NavItem eventKey={1}><FormControl type=\"text\" placeholder=\"Search\"/></NavItem>\n                        <NavItem eventKey={2} href=\"#\"><Badge dataBadge=\"4\" colors=\"warning\"><Icon\n                            type=\"uf-bell\"></Icon></Badge></NavItem>\n                        <NavItem eventKey={3} href=\"#\"><Icon type=\"uf-bubble-o\"></Icon></NavItem>\n                        <Menu mode=\"horizontal\" className=\"dropdown\">\n                            <SubMenu title={<span>刘认华<Icon type=\"uf-triangle-down\"></Icon></span>}>\n                                <Menu.Item key=\"setting:1\">Option 1</Menu.Item>\n                                <Menu.Item key=\"setting:2\">Option 2</Menu.Item>\n                                <Menu.Item key=\"setting:3\">Option 3</Menu.Item>\n                                <Menu.Item key=\"setting:4\">Option 4</Menu.Item>\n                            </SubMenu>\n                        </Menu>\n                    </Nav>\n                </Navbar>\n                <SideContainer onToggle={this.onToggle.bind(this)} expanded={this.state.expanded}>\n                    <Menu onClick={this.handleClick.bind(this)}\n                          style={{ width: 240 }}\n                          defaultOpenKeys={['demo3sub1']}\n                          selectedKeys={[this.state.current]}\n                          mode=\"inline\"\n                        >\n                        <SubMenu key=\"demo3sub1\" title={<span><span>Navigation One</span></span>}>\n                            <MenuItemGroup title=\"Item 1\">\n                                <Menu.Item key=\"1\">Option 1</Menu.Item>\n                                <Menu.Item key=\"2\">Option 2</Menu.Item>\n                            </MenuItemGroup>\n                            <MenuItemGroup title=\"Item 2\">\n                                <Menu.Item key=\"3\">Option 3</Menu.Item>\n                                <Menu.Item key=\"4\">Option 4</Menu.Item>\n                            </MenuItemGroup>\n                        </SubMenu>\n                        <SubMenu key=\"demo3sub2\" title={<span><span>Navigation Two</span></span>}>\n                            <Menu.Item key=\"5\">Option 5</Menu.Item>\n                            <Menu.Item key=\"6\">Option 6</Menu.Item>\n                            <SubMenu key=\"demo3sub3\" title=\"Submenu\">\n                                <Menu.Item key=\"7\">Option 7</Menu.Item>\n                                <Menu.Item key=\"8\">Option 8</Menu.Item>\n                            </SubMenu>\n                        </SubMenu>\n                        <SubMenu key=\"demo3sub4\" title={<span><span>Navigation Three</span></span>}>\n                            <Menu.Item key=\"9\">Option 9</Menu.Item>\n                            <Menu.Item key=\"10\">Option 10</Menu.Item>\n                            <Menu.Item key=\"11\">Option 11</Menu.Item>\n                            <Menu.Item key=\"12\">Option 12</Menu.Item>\n                        </SubMenu>\n                    </Menu>\n                </SideContainer>\n            </div>\n        )\n    }\n}","desc":" 当屏幕小于768 菜单隐藏。"}]
+}var DemoArray = [{"example":<Demo1 />,"title":" Navbar基础样式","code":"/**\n * @title Navbar基础样式\n * @description 当屏幕小于768 菜单隐藏。\n */\n\n\nclass Demo1 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            expanded: false\n        }\n    }\n\n    onToggle(value) {\n        this.setState({expanded: value});\n    }\n\n    render() {\n        return (\n            <div>\n                <Navbar inverse expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>\n                    <Header>\n                        <Brand>\n                            <a href=\"#\">React-FED</a>\n                        </Brand>\n                        <Toggle />\n                    </Header>\n\n                    <Collapse>\n                        <Nav>\n                            <NavItem eventKey={1} href=\"#\">选项</NavItem>\n                            <NavItem eventKey={2} href=\"#\">选项</NavItem>\n                        </Nav>\n                        <Nav pullLeft>\n                            <NavItem eventKey={1} href=\"#\">选项</NavItem>\n                            <NavItem eventKey={2} href=\"#\">选项</NavItem>\n                        </Nav>\n                        <Navbar.Form pullRight>\n                            <FormControl type=\"text\" placeholder=\"Search\"/>\n                        </Navbar.Form>\n                    </Collapse>\n                </Navbar>\n            </div>\n        )\n    }\n}","desc":" 当屏幕小于768 菜单隐藏。"},{"example":<Demo2 />,"title":" 横向Menu纯菜单导航","code":"/**\n * @title 横向Menu纯菜单导航\n * @description 更简洁，更方便\n */\n\nclass Demo2 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            current: 'mail'\n        }\n    }\n\n    handleClick(e) {\n        this.setState({\n            current: e.key,\n        });\n    }\n\n    render() {\n        return (\n            <Menu onClick={this.handleClick.bind(this)}\n                  selectedKeys={[this.state.current]}\n                  mode=\"horizontal\"\n                >\n                <Menu.Item key=\"mail\">\n                    组织 1\n                </Menu.Item>\n                <Menu.Item key=\"app\" disabled>\n                    组织 2\n                </Menu.Item>\n                <SubMenu title={<span>组织 1 - 子</span>}>\n                    <MenuItemGroup title=\"组 1\">\n                        <Menu.Item key=\"setting:1\">选项 1</Menu.Item>\n                        <Menu.Item key=\"setting:2\">选项 2</Menu.Item>\n                    </MenuItemGroup>\n                    <MenuItemGroup title=\"组 2\">\n                        <Menu.Item key=\"setting:3\">选项 3</Menu.Item>\n                        <Menu.Item key=\"setting:4\">选项 4</Menu.Item>\n                    </MenuItemGroup>\n                </SubMenu>\n            </Menu>\n        )\n    }\n}","desc":" 更简洁，更方便"},{"example":<Demo3 />,"title":" 竖向Menu基础样式","code":"/**\n * @title 竖向Menu基础样式\n * @description 子菜单竖向显示，可折叠。\n */\n\nclass Demo3 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            current: 1\n        }\n    }\n\n    handleClick(e) {\n        console.log('click ', e);\n        this.setState({\n            current: e.key,\n        });\n    }\n\n    render() {\n        return (\n            <Menu onClick={this.handleClick.bind(this)} style={{ width: 240 }} defaultOpenKeys={['demo3sub1']} selectedKeys={[this.state.current]} mode=\"inline\">\n                <SubMenu key=\"demo3sub1\" title={<span><span>组织 1</span></span>}>\n                    <MenuItemGroup title=\"组 1\">\n                        <Menu.Item key=\"1\">选项 1</Menu.Item>\n                        <Menu.Item key=\"2\">选项 2</Menu.Item>\n                    </MenuItemGroup>\n                    <MenuItemGroup title=\"组 2\">\n                        <Menu.Item key=\"3\">选项 3</Menu.Item>\n                        <Menu.Item key=\"4\">选项 4</Menu.Item>\n                    </MenuItemGroup>\n                </SubMenu>\n                <SubMenu key=\"demo3sub2\" title={<span><span>组织 2</span></span>}>\n                    <Menu.Item key=\"5\">选项 5</Menu.Item>\n                    <Menu.Item key=\"6\">选项 6</Menu.Item>\n                    <SubMenu key=\"demo3sub3\" title=\"子项\">\n                        <Menu.Item key=\"7\">选项 7</Menu.Item>\n                        <Menu.Item key=\"8\">选项 8</Menu.Item>\n                    </SubMenu>\n                </SubMenu>\n                <SubMenu key=\"demo3sub4\" title={<span><span>组织 3</span></span>}>\n                    <Menu.Item key=\"9\">选项 9</Menu.Item>\n                    <Menu.Item key=\"10\">选项 10</Menu.Item>\n                    <Menu.Item key=\"11\">选项 11</Menu.Item>\n                    <Menu.Item key=\"12\">选项 12</Menu.Item>\n                </SubMenu>\n            </Menu>\n        )\n    }\n}","desc":" 子菜单竖向显示，可折叠。"},{"example":<Demo4 />,"title":" 竖向手风琴Menu","code":"/**\n * @title 竖向手风琴Menu\n * @description 菜单展开是手风琴形式。\n */\n\nclass Demo4 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            current: '1',\n            openKeys: []\n        }\n    }\n    handleClick(e) {\n        console.log('Clicked: ', e);\n        this.setState({current: e.key});\n    }\n    onOpenChange(openKeys) {\n        const state = this.state;\n        const latestOpenKey = openKeys.find(key => !(state.openKeys.indexOf(key) > -1));\n        const latestCloseKey = state.openKeys.find(key => !(openKeys.indexOf(key) > -1));\n\n        let nextOpenKeys = [];\n        if (latestOpenKey) {\n            nextOpenKeys = this.getAncestorKeys(latestOpenKey).concat(latestOpenKey);\n        }\n        if (latestCloseKey) {\n            nextOpenKeys = this.getAncestorKeys(latestCloseKey);\n        }\n        this.setState({openKeys: nextOpenKeys});\n    }\n    getAncestorKeys(key) {\n        const map = {\n            sub3: ['sub2'],\n        };\n        return map[key] || [];\n    }\n    render() {\n        return (\n            <Menu mode=\"inline\" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} onClick={this.handleClick.bind(this)}>\n                <SubMenu key=\"sub1\" title={<span><span>组织 1</span></span>}>\n                    <Menu.Item key=\"1\">选项 1</Menu.Item>\n                    <Menu.Item key=\"2\">选项 2</Menu.Item>\n                    <Menu.Item key=\"3\">选项 3</Menu.Item>\n                    <Menu.Item key=\"4\">选项 4</Menu.Item>\n                </SubMenu>\n                <SubMenu key=\"sub2\" title={<span><span>组织 2</span></span>}>\n                    <Menu.Item key=\"5\">选项 5</Menu.Item>\n                    <Menu.Item key=\"6\">选项 6</Menu.Item>\n                    <SubMenu key=\"sub3\" title=\"子项\">\n                        <Menu.Item key=\"7\">选项 7</Menu.Item>\n                        <Menu.Item key=\"8\">选项 8</Menu.Item>\n                    </SubMenu>\n                </SubMenu>\n                <SubMenu key=\"sub4\" title={<span><span>组织 3</span></span>}>\n                    <Menu.Item key=\"9\">选项 9</Menu.Item>\n                    <Menu.Item key=\"10\">选项 10</Menu.Item>\n                    <Menu.Item key=\"11\">选项 11</Menu.Item>\n                    <Menu.Item key=\"12\">选项 12</Menu.Item>\n                </SubMenu>\n            </Menu>\n        )\n    }\n}","desc":" 菜单展开是手风琴形式。"},{"example":<Demo5 />,"title":" 子菜单呼出形式Menu","code":"/**\n * @title 子菜单呼出形式Menu\n * @description 子菜单在右侧呼出形式显示。\n */\n\nclass Demo5 extends Component {\n\n    handleClick() {\n        console.log('click', e);\n    }\n    render() {\n        return (\n            <Menu onClick={this.handleClick.bind(this)} style={{ width: 240 }} mode=\"vertical\">\n                <SubMenu key=\"sub1\" title={<span><span>组织 1</span></span>}>\n                    <MenuItemGroup title=\"Item 1\">\n                        <Menu.Item key=\"1\">选项 1</Menu.Item>\n                        <Menu.Item key=\"2\">选项 2</Menu.Item>\n                    </MenuItemGroup>\n                    <MenuItemGroup title=\"Iteom 2\">\n                        <Menu.Item key=\"3\">选项 3</Menu.Item>\n                        <Menu.Item key=\"4\">选项 4</Menu.Item>\n                    </MenuItemGroup>\n                </SubMenu>\n                <SubMenu key=\"sub2\" title={<span><span>组织 2</span></span>}>\n                    <Menu.Item key=\"5\">选项 5</Menu.Item>\n                    <Menu.Item key=\"6\">选项 6</Menu.Item>\n                    <SubMenu key=\"sub3\" title=\"Submenu\">\n                        <Menu.Item key=\"7\">选项 7</Menu.Item>\n                        <Menu.Item key=\"8\">选项 8</Menu.Item>\n                    </SubMenu>\n                </SubMenu>\n                <SubMenu key=\"sub4\" title={<span><span>组织 3</span></span>}>\n                    <Menu.Item key=\"9\">选项 9</Menu.Item>\n                    <Menu.Item key=\"10\">选项 10</Menu.Item>\n                    <Menu.Item key=\"11\">选项 11</Menu.Item>\n                    <Menu.Item key=\"12\">选项 12</Menu.Item>\n                </SubMenu>\n            </Menu>\n        )\n    }\n}","desc":" 子菜单在右侧呼出形式显示。"},{"example":<Demo6 />,"title":" Navbar基础样式","code":"/**\n * @title Navbar基础样式\n * @description 当屏幕小于768 菜单隐藏。\n */\n\n\nclass Demo6 extends Component {\n    constructor(props, context) {\n        super(props, context);\n        this.state = {\n            expanded: false,\n            current: 1\n        }\n    }\n\n    onToggle(value) {\n        this.setState({expanded: value});\n    }\n\n    handleClick(e) {\n        console.log('click ', e);\n        this.setState({\n            current: e.key\n        });\n    }\n\n    render() {\n        return (\n            <div id=\"demo6\">\n                <Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>\n                    <Toggle show/>\n                    <Header>\n                        <Brand>\n                            <a href=\"#\"><img style={{width:140}} src=\"http://design.yyuap.com/logos/logox.png\"/></a>\n                        </Brand>\n                    </Header>\n\n                    <Nav pullRight>\n                        <NavItem eventKey={1}><FormControl type=\"text\" placeholder=\"Search\"/></NavItem>\n                        <NavItem eventKey={2} href=\"#\"><Badge dataBadge=\"4\" colors=\"warning\"><Icon\n                            type=\"uf-bell\"></Icon></Badge></NavItem>\n                        <NavItem eventKey={3} href=\"#\"><Icon type=\"uf-bubble-o\"></Icon></NavItem>\n                        <Menu mode=\"horizontal\" className=\"dropdown\">\n                            <SubMenu title={<span>刘认华<Icon type=\"uf-triangle-down\"></Icon></span>}>\n                                <Menu.Item key=\"setting:1\">选项 1</Menu.Item>\n                                <Menu.Item key=\"setting:2\">选项 2</Menu.Item>\n                                <Menu.Item key=\"setting:3\">选项 3</Menu.Item>\n                                <Menu.Item key=\"setting:4\">选项 4</Menu.Item>\n                            </SubMenu>\n                        </Menu>\n                    </Nav>\n                </Navbar>\n                <SideContainer onToggle={this.onToggle.bind(this)} expanded={this.state.expanded}>\n                    <Menu onClick={this.handleClick.bind(this)}\n                          style={{ width: 240 }}\n                          defaultOpenKeys={['demo3sub1']}\n                          selectedKeys={[this.state.current]}\n                          mode=\"inline\"\n                        >\n                        <SubMenu key=\"demo3sub1\" title={<span><span>组织 1</span></span>}>\n                            <MenuItemGroup title=\"组 1\">\n                                <Menu.Item key=\"1\">选项 1</Menu.Item>\n                                <Menu.Item key=\"2\">选项 2</Menu.Item>\n                            </MenuItemGroup>\n                            <MenuItemGroup title=\"组 2\">\n                                <Menu.Item key=\"3\">选项 3</Menu.Item>\n                                <Menu.Item key=\"4\">选项 4</Menu.Item>\n                            </MenuItemGroup>\n                        </SubMenu>\n                        <SubMenu key=\"demo3sub2\" title={<span><span>组织 2</span></span>}>\n                            <Menu.Item key=\"5\">选项 5</Menu.Item>\n                            <Menu.Item key=\"6\">选项 6</Menu.Item>\n                            <SubMenu key=\"demo3sub3\" title=\"子项\">\n                                <Menu.Item key=\"7\">选项 7</Menu.Item>\n                                <Menu.Item key=\"8\">选项 8</Menu.Item>\n                            </SubMenu>\n                        </SubMenu>\n                        <SubMenu key=\"demo3sub4\" title={<span><span>组织 3</span></span>}>\n                            <Menu.Item key=\"9\">选项 9</Menu.Item>\n                            <Menu.Item key=\"10\">选项 10</Menu.Item>\n                            <Menu.Item key=\"11\">选项 11</Menu.Item>\n                            <Menu.Item key=\"12\">选项 12</Menu.Item>\n                        </SubMenu>\n                    </Menu>\n                </SideContainer>\n            </div>\n        )\n    }\n}","desc":" 当屏幕小于768 菜单隐藏。"}]
 
 
 class Demo extends Component {

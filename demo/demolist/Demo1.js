@@ -22,19 +22,19 @@ class Demo1 extends Component {
                 <Navbar inverse expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
                     <Header>
                         <Brand>
-                            <a href="#">React-Bootstrap</a>
+                            <a href="#">React-FED</a>
                         </Brand>
                         <Toggle />
                     </Header>
 
                     <Collapse>
                         <Nav>
-                            <NavItem eventKey={1} href="#">Link</NavItem>
-                            <NavItem eventKey={2} href="#">Link</NavItem>
+                            <NavItem eventKey={1} href="#">选项</NavItem>
+                            <NavItem eventKey={2} href="#">选项</NavItem>
                         </Nav>
                         <Nav pullLeft>
-                            <NavItem eventKey={1} href="#">Link</NavItem>
-                            <NavItem eventKey={2} href="#">Link</NavItem>
+                            <NavItem eventKey={1} href="#">选项</NavItem>
+                            <NavItem eventKey={2} href="#">选项</NavItem>
                         </Nav>
                         <Navbar.Form pullRight>
                             <FormControl type="text" placeholder="Search"/>

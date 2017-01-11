@@ -37,7 +37,7 @@ class Demo4 extends Component {
     }
     render() {
         return (
-            <Menu mode="inline" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} onClick={this.handleClick.bind(this)}>
+            <Menu mode="inline" openKeys={this.state.openKeys}   onOpenChange={this.onOpenChange.bind(this)} selectedKeys={[this.state.current]} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
                 <SubMenu key="sub1" title={<span><span>组织 1</span></span>}>
                     <Menu.Item key="1">选项 1</Menu.Item>
                     <Menu.Item key="2">选项 2</Menu.Item>

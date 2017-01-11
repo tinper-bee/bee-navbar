@@ -39,7 +39,6 @@ class Demo6 extends Component {
                         <NavItem eventKey={1}><FormControl type="text" placeholder="Search"/></NavItem>
                         <NavItem eventKey={2} href="#"><Badge dataBadge="4" colors="warning"><Icon
                             type="uf-bell"></Icon></Badge></NavItem>
-                        <NavItem eventKey={3} href="#"><Icon type="uf-bubble-o"></Icon></NavItem>
                         <Menu mode="horizontal" className="dropdown">
                             <SubMenu title={<span>刘认华<Icon type="uf-triangle-down"></Icon></span>}>
                                 <Menu.Item key="setting:1">选项 1</Menu.Item>

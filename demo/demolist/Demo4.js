@@ -10,6 +10,7 @@ class Demo4 extends Component {
             current: '1',
             openKeys: []
         }
+        this.myfilter = this.myfilter.bind(this);
     }
     handleClick(e) {
         console.log('Clicked: ', e);
@@ -17,8 +18,12 @@ class Demo4 extends Component {
     }
     onOpenChange(openKeys) {
         const state = this.state;
-        const latestOpenKey = openKeys.find(key => !(state.openKeys.indexOf(key) > -1));
-        const latestCloseKey = state.openKeys.find(key => !(openKeys.indexOf(key) > -1));
+
+        const latestOpenKey = this.myfilter(openKeys,state.openKeys);
+        const latestCloseKey = this.myfilter(state.openKeys,openKeys);
+
+         /*   const latestOpenKey = openKeys.find(key => !(state.openKeys.indexOf(key) > -1));
+            const latestCloseKey = state.openKeys.find(key => !(openKeys.indexOf(key) > -1));*/
 
         let nextOpenKeys = [];
         if (latestOpenKey) {
@@ -29,6 +34,21 @@ class Demo4 extends Component {
         }
         this.setState({openKeys: nextOpenKeys});
     }
+    //IE下 array.find（）方法不可用
+    myfilter(arr1,arr2) {
+        if(arr2.length == 0 || !arr2) {
+            return arr1[0];
+        }
+
+        for(var i=0;i<arr1.length;i++)
+        {
+          if(arr2.indexOf(arr1[i].toString())==-1)
+          {
+                return arr1[i];
+          }      
+        }
+        return false;
+    }
     getAncestorKeys(key) {
         const map = {
             sub3: ['sub2'],
@@ -37,7 +57,7 @@ class Demo4 extends Component {
     }
     render() {
         return (
-            <Menu mode="inline" openKeys={this.state.openKeys}   onOpenChange={this.onOpenChange.bind(this)} selectedKeys={[this.state.current]} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
+            <Menu mode="inline" openKeys={this.state.openKeys} selectedKeys={[this.state.current]} style={{ width: 240 }} onOpenChange={this.onOpenChange.bind(this)} style={{ width: 240 }}  onClick={this.handleClick.bind(this)}>
                 <SubMenu key="sub1" title={<span><span>组织 1</span></span>}>
                     <Menu.Item key="1">选项 1</Menu.Item>
                     <Menu.Item key="2">选项 2</Menu.Item>

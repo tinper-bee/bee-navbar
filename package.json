@@ -44,6 +44,7 @@
     "bee-menu": "latest",
     "bee-transition": "latest",
     "classnames": "^2.2.5",
+    "console-polyfill": "^0.2.2",
     "dom-scroll-into-view": "^1.2.1",
     "tinper-bee-core": "^0.1.6"
   },

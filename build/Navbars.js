@@ -174,7 +174,9 @@ var Navbar = function (_React$Component) {
         className = _props2.className,
         children = _props2.children,
         clsPrefix = _props2.clsPrefix,
-        others = _objectWithoutProperties(_props2, ['componentClass', 'fixedTop', 'fixedBottom', 'staticTop', 'inverse', 'fluid', 'className', 'children', 'clsPrefix']);
+        expanded = _props2.expanded,
+        onToggle = _props2.onToggle,
+        others = _objectWithoutProperties(_props2, ['componentClass', 'fixedTop', 'fixedBottom', 'staticTop', 'inverse', 'fluid', 'className', 'children', 'clsPrefix', 'expanded', 'onToggle']);
 
     // const [bsProps, elementProps] = splitBsPropsAndOmit(props, [
     //   'expanded', 'onToggle',

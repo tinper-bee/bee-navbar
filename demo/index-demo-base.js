@@ -10,6 +10,7 @@ import Icon from 'bee-icon';
 import Badge from 'bee-badge';
 
 const Menu = Navbar.Menu;
+const MenuItem = Navbar.MenuItem;
 const SubMenu = Menu.SubMenu;
 const MenuItemGroup = Menu.ItemGroup;
 

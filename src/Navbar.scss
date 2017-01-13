@@ -93,6 +93,10 @@ $clsPrefix: 'u-navbar';
             color: $navbar-inverse-hover-color;
             background-color: transparent;
         }
+        .#{$clsPrefix}-nav > li:hover{
+            color:#9d9d9d;
+            cursor: pointer;
+        }
         .#{$clsPrefix}-nav>li>a:hover {
             color: $navbar-inverse-hover-color;
             background-color: transparent;
@@ -182,6 +186,7 @@ $clsPrefix: 'u-navbar';
             line-height: 20px;
         }
     }
+
     &-fixed-bottom {
         bottom: 0;
         margin-bottom: 0;

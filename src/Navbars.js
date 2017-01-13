@@ -118,6 +118,8 @@ class Navbar extends React.Component {
       className,
       children,
       clsPrefix,
+      expanded,
+      onToggle,
       ...others
     } = this.props;
 

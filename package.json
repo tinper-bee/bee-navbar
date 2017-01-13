@@ -1,6 +1,6 @@
 {
   "name": "bee-navbar",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "description": "navbars ui component for react",
   "keywords": [
     "react",
@@ -35,7 +35,7 @@
   "dependencies": {
     "bee-badge": "latest",
     "bee-button": "latest",
-    "bee-dropdown": "latest",
+    "bee-dropdown": "^0.2.1",
     "bee-form": "latest",
     "bee-form-control": "latest",
     "bee-form-group": "latest",

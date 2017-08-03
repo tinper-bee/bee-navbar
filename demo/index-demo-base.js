@@ -20,6 +20,7 @@ const Brand = Navbar.Brand;
 const Collapse = Navbar.Collapse;
 const Toggle = Navbar.Toggle;
 const Nav = Navbar.Nav;
+const MenuToggle = Navbar.MenuToggle;
 const SideContainer = Navbar.SideContainer;
 
 const CARET = <i className="uf uf-arrow-down"></i>;

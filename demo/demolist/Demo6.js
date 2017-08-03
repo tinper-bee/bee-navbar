@@ -28,7 +28,7 @@ class Demo6 extends Component {
         return (
             <div id="demo6">
                 <Navbar expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
-                    <Toggle show/>
+                    <MenuToggle show/>
                     <Header>
                         <Brand>
                             <a href="#"><img style={{width:140}} src="http://design.yyuap.com/logos/logox.png"/></a>

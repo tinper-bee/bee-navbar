@@ -24,7 +24,7 @@ const defaultProps = {
     show:false
 }
 
-class NavbarToggle extends React.Component {
+class MenuToggle extends React.Component {
 
   constructor(props){
     super(props);
@@ -55,7 +55,9 @@ class NavbarToggle extends React.Component {
         className,
         clsPrefix,
         show && 'show',
+        
       )
+      //!this.context.u_navbar.expanded && 'collapsed',
     };
 
     if (children) {
@@ -70,7 +72,20 @@ class NavbarToggle extends React.Component {
     return (
       <div>
 
-          {!show && (
+          {show && this.state.toggleState && (
+            <button {...buttonProps} >
+              <span className="sr-only">Toggle navigation</span>
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+              <span className="icon-bar" />
+            </button>
+          )}
+          {show && !this.state.toggleState && (
+            <button {...buttonProps}>
+              <span className="uf uf-arrow-left"></span>
+            </button>
+          )}
+          {!show && !this.state.toggleState && (
             <button {...buttonProps} >
               <span className="sr-only">Toggle navigation</span>
               <span className="icon-bar" />
@@ -85,8 +100,8 @@ class NavbarToggle extends React.Component {
   }
 }
 
-NavbarToggle.propTypes = propTypes;
-NavbarToggle.defaultProps = defaultProps;
-NavbarToggle.contextTypes = contextTypes;
+MenuToggle.propTypes = propTypes;
+MenuToggle.defaultProps = defaultProps;
+MenuToggle.contextTypes = contextTypes;
 
-export default NavbarToggle;
+export default MenuToggle;

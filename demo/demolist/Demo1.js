@@ -8,12 +8,16 @@ class Demo1 extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            expanded: false
+            expanded: false,
+            selectedkey: 1
         }
     }
 
     onToggle(value) {
         this.setState({expanded: value});
+    }
+    handleSelect(index) {
+        this.setState({selectedkey: index});
     }
 
     render() {
@@ -29,7 +33,7 @@ class Demo1 extends Component {
                     </Header>
 
                     <Collapse>
-                        <Nav>
+                        <Nav selectedkey={this.state.selectedkey} onSelect={this.handleSelect.bind(this)}>
                             <NavItem eventKey={1}>选项</NavItem>
                             <NavItem eventKey={2}>
                                 选项

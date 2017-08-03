@@ -48,7 +48,7 @@ class NavItem extends React.Component {
     }
 
     if (onSelect) {
-      onSelect(this.props.skey);
+      onSelect(this.props.eventKey);
     }
   }
 
@@ -58,7 +58,7 @@ class NavItem extends React.Component {
       this.props;
     const { selectedkey } = this.context.u_nav;
 
-    let activeItem = (this.props.skey === selectedkey);
+    let activeItem = (this.props.eventKey === selectedkey);
 
     let classes = {'active':activeItem,'disabled':disabled};
 

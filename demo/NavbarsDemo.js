@@ -12,6 +12,7 @@ const Header = Navbar.Header;
 const Brand = Navbar.Brand;
 const Collapse = Navbar.Collapse;
 const Toggle = Navbar.Toggle;
+const MenuToggle = Navbar.MenuToggle;
 const Nav = Navbar.Nav;
 
 

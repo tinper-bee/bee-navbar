@@ -71,7 +71,7 @@ var NavItem = function (_React$Component) {
     }
 
     if (onSelect) {
-      onSelect(this.props.skey);
+      onSelect(this.props.eventKey);
     }
   };
 
@@ -88,7 +88,7 @@ var NavItem = function (_React$Component) {
     var selectedkey = this.context.u_nav.selectedkey;
 
 
-    var activeItem = this.props.skey === selectedkey;
+    var activeItem = this.props.eventKey === selectedkey;
 
     var classes = { 'active': activeItem, 'disabled': disabled };
 

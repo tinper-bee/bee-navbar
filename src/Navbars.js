@@ -14,6 +14,7 @@ import Nav from './Nav';
 import NavItem from './NavItem';
 import Menu from './VerticalMenu';
 import NavSideContainer from './NavSideContainer';
+import MenuToggle from './MenuToggle';
 //import NavDropdown from './NavDropdown';
 
 const propTypes = {
@@ -208,6 +209,7 @@ Navbar.SideContainer = NavSideContainer;
 Navbar.Brand = NavbarBrand;
 Navbar.Header = NavbarHeader;
 Navbar.Toggle = NavbarToggle;
+Navbar.MenuToggle = MenuToggle;
 Navbar.Collapse = NavbarCollapse;
 Navbar.Nav = Nav;
 //Navbar.NavDropdown = NavDropdown;

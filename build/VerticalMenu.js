@@ -137,6 +137,7 @@ Menu.ItemGroup = _beeMenu.ItemGroup;
 Menu.defaultProps = {
   prefixCls: 'u-menu',
   className: '',
-  theme: 'light' };
+  theme: 'light' // or dark
+};
 exports["default"] = Menu;
 module.exports = exports['default'];

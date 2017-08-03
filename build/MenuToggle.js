@@ -49,11 +49,11 @@ var defaultProps = {
   show: false
 };
 
-var NavbarToggle = function (_React$Component) {
-  _inherits(NavbarToggle, _React$Component);
+var MenuToggle = function (_React$Component) {
+  _inherits(MenuToggle, _React$Component);
 
-  function NavbarToggle(props) {
-    _classCallCheck(this, NavbarToggle);
+  function MenuToggle(props) {
+    _classCallCheck(this, MenuToggle);
 
     var _this = _possibleConstructorReturn(this, _React$Component.call(this, props));
 
@@ -63,7 +63,7 @@ var NavbarToggle = function (_React$Component) {
     };return _this;
   }
 
-  NavbarToggle.prototype.handleClick = function handleClick() {
+  MenuToggle.prototype.handleClick = function handleClick() {
     var _context$u_navbar = this.context.u_navbar,
         expanded = _context$u_navbar.expanded,
         onToggle = _context$u_navbar.onToggle;
@@ -74,7 +74,7 @@ var NavbarToggle = function (_React$Component) {
     }
   };
 
-  NavbarToggle.prototype.render = function render() {
+  MenuToggle.prototype.render = function render() {
     var _props = this.props,
         onClick = _props.onClick,
         className = _props.className,
@@ -90,6 +90,7 @@ var NavbarToggle = function (_React$Component) {
     }, props, {
       onClick: (0, _tinperBeeCore.createChainedFunction)(onClick, this.handleClick.bind(this)),
       className: (0, _classnames2["default"])(className, clsPrefix, show && 'show')
+      //!this.context.u_navbar.expanded && 'collapsed',
     });
 
     if (children) {
@@ -104,7 +105,24 @@ var NavbarToggle = function (_React$Component) {
     return _react2["default"].createElement(
       'div',
       null,
-      !show && _react2["default"].createElement(
+      show && this.state.toggleState && _react2["default"].createElement(
+        'button',
+        buttonProps,
+        _react2["default"].createElement(
+          'span',
+          { className: 'sr-only' },
+          'Toggle navigation'
+        ),
+        _react2["default"].createElement('span', { className: 'icon-bar' }),
+        _react2["default"].createElement('span', { className: 'icon-bar' }),
+        _react2["default"].createElement('span', { className: 'icon-bar' })
+      ),
+      show && !this.state.toggleState && _react2["default"].createElement(
+        'button',
+        buttonProps,
+        _react2["default"].createElement('span', { className: 'uf uf-arrow-left' })
+      ),
+      !show && !this.state.toggleState && _react2["default"].createElement(
         'button',
         buttonProps,
         _react2["default"].createElement(
@@ -119,12 +137,12 @@ var NavbarToggle = function (_React$Component) {
     );
   };
 
-  return NavbarToggle;
+  return MenuToggle;
 }(_react2["default"].Component);
 
-NavbarToggle.propTypes = propTypes;
-NavbarToggle.defaultProps = defaultProps;
-NavbarToggle.contextTypes = contextTypes;
+MenuToggle.propTypes = propTypes;
+MenuToggle.defaultProps = defaultProps;
+MenuToggle.contextTypes = contextTypes;
 
-exports["default"] = NavbarToggle;
+exports["default"] = MenuToggle;
 module.exports = exports['default'];

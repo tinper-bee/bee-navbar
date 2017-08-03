@@ -12,9 +12,6 @@ import NavbarHeader from './NavbarHeader';
 import NavbarToggle from './NavbarToggle';
 import Nav from './Nav';
 import NavItem from './NavItem';
-import Menu from './VerticalMenu';
-import NavSideContainer from './NavSideContainer';
-import MenuToggle from './MenuToggle';
 //import NavDropdown from './NavDropdown';
 
 const propTypes = {
@@ -205,16 +202,13 @@ function createSimpleWrapper(tag, suffix, displayName) {
   return Wrapper;
 }
 
-Navbar.SideContainer = NavSideContainer;
 Navbar.Brand = NavbarBrand;
 Navbar.Header = NavbarHeader;
 Navbar.Toggle = NavbarToggle;
-Navbar.MenuToggle = MenuToggle;
 Navbar.Collapse = NavbarCollapse;
 Navbar.Nav = Nav;
 //Navbar.NavDropdown = NavDropdown;
 Navbar.NavItem = NavItem;
-Navbar.Menu = Menu;
 
 Navbar.Form = createSimpleWrapper('div', 'form', 'NavbarForm');
 Navbar.Text = createSimpleWrapper('p', 'text', 'NavbarText');

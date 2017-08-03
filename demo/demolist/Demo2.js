@@ -1,45 +1,59 @@
 /**
- * @title 横向Menu纯菜单导航
- * @description 更简洁，更方便
+ * @title Navbar基础样式
+ * @description 当屏幕小于768 菜单隐藏。
+ *  const NavItem = Navbar.NavItem;
+ *  const Header = Navbar.Header;
+ *  const Brand = Navbar.Brand;
+ *  const Collapse = Navbar.Collapse;
+ *  const Toggle = Navbar.Toggle;
+ *  const Nav = Navbar.Nav;
+ * 添加Collapse组件是在bee-transition的子组件组件上做的扩展 
+ * 此例子结合了常用的表单场景
  */
+
 
 class Demo2 extends Component {
     constructor(props, context) {
         super(props, context);
         this.state = {
-            current: 'mail'
+            expanded: false,
+            selectedkey: 1
         }
     }
 
-    handleClick(e) {
-        this.setState({
-            current: e.key,
-        });
+    onToggle(value) {
+        this.setState({expanded: value});
+    }
+
+    handleSelect(index) {
+        this.setState({selectedkey: index});
     }
 
     render() {
         return (
-            <Menu onClick={this.handleClick.bind(this)}
-                  selectedKeys={[this.state.current]}
-                  mode="horizontal"
-                >
-                <Menu.Item key="mail">
-                    组织 1
-                </Menu.Item>
-                <Menu.Item key="app" disabled>
-                    组织 2
-                </Menu.Item>
-                <SubMenu title={<span>组织 1 - 子</span>}>
-                    <MenuItemGroup title="组 1">
-                        <Menu.Item key="setting:1">选项 1</Menu.Item>
-                        <Menu.Item key="setting:2">选项 2</Menu.Item>
-                    </MenuItemGroup>
-                    <MenuItemGroup title="组 2">
-                        <Menu.Item key="setting:3">选项 3</Menu.Item>
-                        <Menu.Item key="setting:4">选项 4</Menu.Item>
-                    </MenuItemGroup>
-                </SubMenu>
-            </Menu>
+            <div>
+                <Navbar inverse expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+                    <Header>
+                        <Brand>
+                            <a href="#">React-FED</a>
+                        </Brand>
+                        <Toggle />
+                    </Header>
+
+                    <Collapse>
+                        <Nav selectedkey={this.state.selectedkey} onSelect={this.handleSelect.bind(this)}>
+                            <NavItem eventKey={1}>选项</NavItem>
+                            <NavItem eventKey={2}>
+                                选项
+                            </NavItem>
+                        </Nav>
+                        
+                        <Navbar.Form pullRight>
+                            <FormControl type="text" placeholder="Search"/>
+                        </Navbar.Form>
+                    </Collapse>
+                </Navbar>
+            </div>
         )
     }
 }

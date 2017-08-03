@@ -9,10 +9,6 @@ import FormControl from 'bee-form-control';
 import Icon from 'bee-icon';
 import Badge from 'bee-badge';
 
-const Menu = Navbar.Menu;
-const MenuItem = Navbar.MenuItem;
-const SubMenu = Menu.SubMenu;
-const MenuItemGroup = Menu.ItemGroup;
 
 const NavItem = Navbar.NavItem;
 const Header = Navbar.Header;
@@ -20,8 +16,6 @@ const Brand = Navbar.Brand;
 const Collapse = Navbar.Collapse;
 const Toggle = Navbar.Toggle;
 const Nav = Navbar.Nav;
-const MenuToggle = Navbar.MenuToggle;
-const SideContainer = Navbar.SideContainer;
 
 const CARET = <i className="uf uf-arrow-down"></i>;
 

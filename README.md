@@ -1,22 +1,22 @@
-# bee-navbars
-[![npm version](https://img.shields.io/npm/v/bee-navbars.svg)](https://www.npmjs.com/package/bee-navbars)
-[![Build Status](https://img.shields.io/travis/tinper-bee/bee-navbars/master.svg)](https://travis-ci.org/tinper-bee/bee-navbars)
-[![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-navbars.svg)](https://david-dm.org/tinper-bee/bee-navbars#info=devDependencies)
+# bee-navbar
+[![npm version](https://img.shields.io/npm/v/bee-navbar.svg)](https://www.npmjs.com/package/bee-navbar)
+[![Build Status](https://img.shields.io/travis/tinper-bee/bee-navbar/master.svg)](https://travis-ci.org/tinper-bee/bee-navbar)
+[![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-navbar.svg)](https://david-dm.org/tinper-bee/bee-navbar#info=devDependencies)
 
 帮助用户依赖导航在各个页面中进行跳转。分为顶部导航和侧边导航，顶部导航提供全局性的类目和功能，侧边导航提供多级结构来收纳和排列网站架构
 
 
 ## 使用
 
-使用单独的bee-navbars包
+使用单独的bee-navbar包
 #### 组件引入
-先进行下载bee-navbars包
+先进行下载bee-navbar包
 ```
-npm install --save bee-navbars
+npm install --save bee-navbar
 ```
 组件调用
 ```js
-import Navbar from 'bee-navbars';
+import Navbar from 'bee-navbar';
 import FormControl from 'bee-form-control';
 
 
@@ -128,15 +128,15 @@ class Demo2 extends Component {
 
 //如果例子中引入其他组件，需将此组件样式引入
 
-- 可以使用link引入dist目录下bee-Navbars.css
+- 可以使用link引入dist目录下bee-Navbar.css
 ```
-<link rel="stylesheet" href="./node_modules/build/bee-navbars.css">
+<link rel="stylesheet" href="./node_modules/build/bee-navbar.css">
 ```
 - 可以在js中import样式
 ```js
-import "./node_modules/src/Navbars.scss"
+import "./node_modules/src/Navbar.scss"
 //或是
-import "./node_modules/build/bee-navbars.css"
+import "./node_modules/build/bee-navbar.css"
 ```
 
 
@@ -201,8 +201,8 @@ import "./node_modules/build/bee-navbars.css"
 #### 开发调试
 
 ```sh
-$ git clone https://github.com/tinper-bee/bee-navbars
-$ cd bee-navbars
+$ git clone https://github.com/tinper-bee/bee-navbar
+$ cd bee-navbar
 $ npm install
 $ npm run dev
 ```

@@ -1,22 +1,22 @@
 {
  "name": "bee-navbar",
- "version": "0.2.10",
- "description": "navbars ui component for react",
+ "version": "0.2.11",
+ "description": "navbar ui component for react",
  "keywords": [
   "react",
   "react-component",
   "react-navbars",
   "iuap-design",
   "neoui-react",
-  "navbars"
+  "navbar"
  ],
  "engines": {
   "node": ">=4.0.0"
  },
- "homepage": "https://github.com/tinper-bee/navbars",
+ "homepage": "https://github.com/tinper-bee/navbar",
  "author": "",
- "repository": "http://github.com/tinper-bee/navbars",
- "bugs": "https://github.com/tinper-bee/navbars/issues",
+ "repository": "http://github.com/tinper-bee/navbar",
+ "bugs": "https://github.com/tinper-bee/navbar/issues",
  "license": "MIT",
  "main": "./build/index",
  "config": {

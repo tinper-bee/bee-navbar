@@ -112,7 +112,7 @@ a{
         .#{$clsPrefix}-nav {
             >li {
                 float: left;
-                padding: 15px 10px;
+                padding: 12px 10px;
                 cursor: default;
                 min-width: 60px;
                 text-align: center;
@@ -211,8 +211,7 @@ a{
         }
     }
     &-form {
-        margin: 8px -15px;
-        padding: 10px 15px;
+        margin-top: 10px;
     }
     
     &-default {

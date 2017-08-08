@@ -1426,7 +1426,7 @@ a {
       border-top: 1px solid rgba(255, 255, 255, 0.1); }
     .u-navbar .u-navbar-nav > li {
       float: left;
-      padding: 15px 10px;
+      padding: 12px 10px;
       cursor: default;
       min-width: 60px;
       text-align: center;
@@ -1494,8 +1494,7 @@ a {
       width: auto;
       vertical-align: middle; }
   .u-navbar-form {
-    margin: 8px -15px;
-    padding: 10px 15px; }
+    margin-top: 10px; }
   .u-navbar-default {
     background-color: #f8f8f8;
     border-color: #e7e7e7; }

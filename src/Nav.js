@@ -1,5 +1,6 @@
 import classNames from 'classnames';
-import React, { cloneElement,PropTypes } from 'react';
+import React, { cloneElement } from 'react';
+import PropTypes from 'prop-types';
 import ReactDOM from 'react-dom';
 import { all } from 'tinper-bee-core';
 //import warning from 'warning';

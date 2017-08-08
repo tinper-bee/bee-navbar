@@ -2,7 +2,8 @@
 /* eslint-disable react/no-multi-comp */
 
 import classnames from 'classnames';
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { elementType } from 'tinper-bee-core';
 
 import {Con} from 'bee-layout';

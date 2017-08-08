@@ -14,6 +14,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 var _tinperBeeCore = require('tinper-bee-core');
 
 var _beeLayout = require('bee-layout');
@@ -116,9 +120,9 @@ var defaultProps = {
 };
 
 var childContextTypes = {
-  u_navbar: _react.PropTypes.shape({
-    expanded: _react.PropTypes.bool,
-    onToggle: _react.PropTypes.func
+  u_navbar: _propTypes2["default"].shape({
+    expanded: _propTypes2["default"].bool,
+    onToggle: _propTypes2["default"].func
   })
 };
 
@@ -247,7 +251,7 @@ function createSimpleWrapper(tag, suffix, displayName) {
   };
 
   Wrapper.contextTypes = {
-    u_navbar: _react.PropTypes.shape({})
+    u_navbar: _propTypes2["default"].shape({})
   };
 
   return Wrapper;

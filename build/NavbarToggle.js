@@ -99,7 +99,6 @@ var NavbarToggle = function (_React$Component) {
         children
       );
     }
-    debugger;
     //当show存在时，渲染左侧静态面包按钮
     return _react2["default"].createElement(
       'div',

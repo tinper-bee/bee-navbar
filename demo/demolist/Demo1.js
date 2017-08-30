@@ -10,6 +10,18 @@
  */
 
 
+import React, { Component } from 'react';
+import Navbar from '../../src';
+
+
+
+const NavItem = Navbar.NavItem;
+const Header = Navbar.Header;
+const Brand = Navbar.Brand;
+const Collapse = Navbar.Collapse;
+const Toggle = Navbar.Toggle;
+const Nav = Navbar.Nav;
+
 class Demo1 extends Component {
     constructor(props, context) {
         super(props, context);
@@ -43,3 +55,5 @@ class Demo1 extends Component {
         )
     }
 }
+
+export default Demo1;

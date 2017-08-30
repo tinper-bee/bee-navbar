@@ -12,6 +12,18 @@
  */
 
 
+import React, { Component } from 'react';
+import Navbar from '../../src';
+import FormControl from 'bee-form-control';
+
+
+const NavItem = Navbar.NavItem;
+const Header = Navbar.Header;
+const Brand = Navbar.Brand;
+const Collapse = Navbar.Collapse;
+const Toggle = Navbar.Toggle;
+const Nav = Navbar.Nav;
+
 class Demo2 extends Component {
     constructor(props, context) {
         super(props, context);
@@ -57,3 +69,5 @@ class Demo2 extends Component {
         )
     }
 }
+
+export default Demo2;

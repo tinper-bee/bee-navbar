@@ -55,7 +55,7 @@ class Demo2 extends Component {
                     <Collapse>
                         <Nav selectedkey={this.state.selectedkey} onSelect={this.handleSelect.bind(this)}>
                             <NavItem eventKey={1}>选项</NavItem>
-                            <NavItem eventKey={2}>
+                            <NavItem href="#" eventKey={2}>
                                 选项
                             </NavItem>
                         </Nav>

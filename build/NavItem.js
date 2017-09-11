@@ -82,12 +82,13 @@ var NavItem = function (_React$Component) {
   NavItem.prototype.render = function render() {
     var _props = this.props,
         active = _props.active,
+        eventKey = _props.eventKey,
         disabled = _props.disabled,
         skey = _props.skey,
         className = _props.className,
         style = _props.style,
         children = _props.children,
-        props = _objectWithoutProperties(_props, ['active', 'disabled', 'skey', 'className', 'style', 'children']);
+        props = _objectWithoutProperties(_props, ['active', 'eventKey', 'disabled', 'skey', 'className', 'style', 'children']);
 
     var selectedkey = this.context.u_nav.selectedkey;
 
@@ -100,7 +101,6 @@ var NavItem = function (_React$Component) {
       'li',
       {
         role: 'presentation',
-        skey: skey,
         className: (0, _classnames2["default"])(className, classes),
         style: style,
         onClick: this.handleClick

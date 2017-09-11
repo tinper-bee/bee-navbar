@@ -55,7 +55,7 @@ class NavItem extends React.Component {
 
   
   render() {
-    const { active, disabled, skey, className, style,children, ...props } =
+    const { active,eventKey, disabled, skey, className, style,children, ...props } =
       this.props;
     const { selectedkey } = this.context.u_nav;
 
@@ -66,7 +66,6 @@ class NavItem extends React.Component {
     let dom = props.href? (
       <li
         role="presentation"
-        skey= {skey}
         className={classNames(className, classes)}
         style={style}
         onClick = {this.handleClick}

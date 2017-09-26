@@ -252,7 +252,6 @@ a{
         background-color: $navbar-inverse-bg-color;
         border-color: $navbar-inverse-border-color;
         .#{$clsPrefix}-brand {
-            color: red;
             color: $navbar-inverse-color;
         }
         .#{$clsPrefix}-nav>li>a {
@@ -377,7 +376,6 @@ a{
     &-toggle.show{
         float:left;
         outline: none;
-        width: 20px;
         width: 30px;
         height: 30px;
         //transition: transform .3s ease;

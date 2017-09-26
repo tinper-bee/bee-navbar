@@ -1521,7 +1521,6 @@ a {
     .u-navbar-inverse .u-navbar-collapse {
       border-top: 1px solid rgba(255, 255, 255, 0.1); }
     .u-navbar-inverse .u-navbar-brand {
-      color: red;
       color: #9d9d9d; }
     .u-navbar-inverse .u-navbar-nav > li > a {
       color: #9d9d9d; }
@@ -1618,7 +1617,6 @@ a {
   .u-navbar-toggle.show {
     float: left;
     outline: none;
-    width: 20px;
     width: 30px;
     height: 30px; }
   .u-navbar-toggle.show.collapsed {

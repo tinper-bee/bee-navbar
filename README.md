@@ -3,7 +3,8 @@
 [![Build Status](https://img.shields.io/travis/tinper-bee/bee-navbar/master.svg)](https://travis-ci.org/tinper-bee/bee-navbar)
 [![devDependency Status](https://img.shields.io/david/dev/tinper-bee/bee-navbar.svg)](https://david-dm.org/tinper-bee/bee-navbar#info=devDependencies)
 
-帮助用户依赖导航在各个页面中进行跳转。分为顶部导航和侧边导航，顶部导航提供全局性的类目和功能，侧边导航提供多级结构来收纳和排列网站架构
+
+帮助用户依赖导航在各个页面中进行跳转。顶部导航提供全局性的类目和功能.
 
 
 ## 使用

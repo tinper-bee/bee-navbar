@@ -20,25 +20,25 @@ const propTypes = {
    * Create a fixed navbar along the top of the screen, that scrolls with the
    * page
    */
-  fixedTop: React.PropTypes.bool,
+  fixedTop: PropTypes.bool,
   /**
    * Create a fixed navbar along the bottom of the screen, that scrolls with
    * the page
    */
-  fixedBottom: React.PropTypes.bool,
+  fixedBottom: PropTypes.bool,
   /**
    * Create a full-width navbar that scrolls away with the page
    */
-  staticTop: React.PropTypes.bool,
+  staticTop: PropTypes.bool,
   /**
    * An alternative dark visual style for the Navbar
    */
-  inverse: React.PropTypes.bool,
+  inverse: PropTypes.bool,
   /**
    * Allow the Navbar to fluidly adjust to the page or container width, instead
    * of at the predefined screen breakpoints
    */
-  fluid: React.PropTypes.bool,
+  fluid: PropTypes.bool,
 
   /**
    * Set a custom element for this component.
@@ -51,16 +51,16 @@ const propTypes = {
    *
    * @controllable navExpanded
    */
-  onToggle: React.PropTypes.func,
+  onToggle: PropTypes.func,
 
   /**
    * Explicitly set the visiblity of the navbar body
    *
    * @controllable onToggle
    */
-  expanded: React.PropTypes.bool,
+  expanded: PropTypes.bool,
 
-  role: React.PropTypes.string,
+  role: PropTypes.string,
 };
 
 const defaultProps = {
@@ -185,8 +185,8 @@ function createSimpleWrapper(tag, suffix, displayName) {
 
   Wrapper.propTypes = {
     componentClass: elementType,
-    pullRight: React.PropTypes.bool,
-    pullLeft: React.PropTypes.bool,
+    pullRight: PropTypes.bool,
+    pullLeft: PropTypes.bool,
   };
 
   Wrapper.defaultProps = {

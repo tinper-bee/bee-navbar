@@ -5,21 +5,21 @@ import PropTypes from 'prop-types';
 import { createChainedFunction } from 'tinper-bee-core';
 
 const propTypes = {
-  active: React.PropTypes.bool,
-  disabled: React.PropTypes.bool,
-  role: React.PropTypes.string,
-  href: React.PropTypes.string,
-  skey: React.PropTypes.oneOfType([
-      React.PropTypes.element,
-      React.PropTypes.string,
-      React.PropTypes.number
+  active: PropTypes.bool,
+  disabled: PropTypes.bool,
+  role: PropTypes.string,
+  href: PropTypes.string,
+  skey: PropTypes.oneOfType([
+      PropTypes.element,
+      PropTypes.string,
+      PropTypes.number
   ]),
-  onClick: React.PropTypes.func,
-  eventKey: React.PropTypes.any,
-  children: React.PropTypes.oneOfType([
-      React.PropTypes.element,
-      React.PropTypes.string,
-      React.PropTypes.node
+  onClick: PropTypes.func,
+  eventKey: PropTypes.any,
+  children: PropTypes.oneOfType([
+      PropTypes.element,
+      PropTypes.string,
+      PropTypes.node
   ]),
 };
 

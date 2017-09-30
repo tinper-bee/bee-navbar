@@ -19,20 +19,20 @@ const propTypes = {
    * Marks the NavItem with a matching `eventKey` as active. Has a
    * higher precedence over `activeHref`.
    */
-  activeKey: React.PropTypes.any,
+  activeKey: PropTypes.any,
 
   /**
    * Marks the child NavItem with a matching `href` prop as active.
    */
-  activeHref: React.PropTypes.string,
+  activeHref: PropTypes.string,
 
   /**
    * NavItems are be positioned vertically.
    */
-  stacked: React.PropTypes.bool,
+  stacked: PropTypes.bool,
 
   justified: all(
-    React.PropTypes.bool,
+    PropTypes.bool,
     ({ justified, navbar }) => (
       justified && navbar ?
         Error('justified navbar `Nav`s are not supported') : null
@@ -49,26 +49,26 @@ const propTypes = {
    * )
    * ```
    */
-  onSelect: React.PropTypes.func,
+  onSelect: PropTypes.func,
 
 
   /**
    * Apply styling an alignment for use in a Navbar. This prop will be set
    * automatically when the Nav is used inside a Navbar.
    */
-  navbar: React.PropTypes.bool,
+  navbar: PropTypes.bool,
 
   /**
    * Float the Nav to the right. When `navbar` is `true` the appropriate
    * contextual classes are added as well.
    */
-  pullRight: React.PropTypes.bool,
+  pullRight: PropTypes.bool,
 
   /**
    * Float the Nav to the left. When `navbar` is `true` the appropriate
    * contextual classes are added as well.
    */
-  pullLeft: React.PropTypes.bool,
+  pullLeft: PropTypes.bool,
 };
 
 const defaultProps = {

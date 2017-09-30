@@ -66,25 +66,25 @@ var propTypes = {
    * Create a fixed navbar along the top of the screen, that scrolls with the
    * page
    */
-  fixedTop: _react2["default"].PropTypes.bool,
+  fixedTop: _propTypes2["default"].bool,
   /**
    * Create a fixed navbar along the bottom of the screen, that scrolls with
    * the page
    */
-  fixedBottom: _react2["default"].PropTypes.bool,
+  fixedBottom: _propTypes2["default"].bool,
   /**
    * Create a full-width navbar that scrolls away with the page
    */
-  staticTop: _react2["default"].PropTypes.bool,
+  staticTop: _propTypes2["default"].bool,
   /**
    * An alternative dark visual style for the Navbar
    */
-  inverse: _react2["default"].PropTypes.bool,
+  inverse: _propTypes2["default"].bool,
   /**
    * Allow the Navbar to fluidly adjust to the page or container width, instead
    * of at the predefined screen breakpoints
    */
-  fluid: _react2["default"].PropTypes.bool,
+  fluid: _propTypes2["default"].bool,
 
   /**
    * Set a custom element for this component.
@@ -97,16 +97,16 @@ var propTypes = {
    *
    * @controllable navExpanded
    */
-  onToggle: _react2["default"].PropTypes.func,
+  onToggle: _propTypes2["default"].func,
 
   /**
    * Explicitly set the visiblity of the navbar body
    *
    * @controllable onToggle
    */
-  expanded: _react2["default"].PropTypes.bool,
+  expanded: _propTypes2["default"].bool,
 
-  role: _react2["default"].PropTypes.string
+  role: _propTypes2["default"].string
 };
 
 var defaultProps = {
@@ -240,8 +240,8 @@ function createSimpleWrapper(tag, suffix, displayName) {
 
   Wrapper.propTypes = {
     componentClass: _tinperBeeCore.elementType,
-    pullRight: _react2["default"].PropTypes.bool,
-    pullLeft: _react2["default"].PropTypes.bool
+    pullRight: _propTypes2["default"].bool,
+    pullLeft: _propTypes2["default"].bool
   };
 
   Wrapper.defaultProps = {

@@ -1,6 +1,6 @@
 {
   "name": "bee-navbar",
-  "version": "0.2.15",
+  "version": "1.0.0",
   "description": "navbar ui component for react",
   "keywords": [
     "react",
@@ -41,22 +41,22 @@
     "bee-form-group": "latest",
     "bee-grid": "latest",
     "bee-icon": "latest",
-    "bee-layout": "^0.2.4",
-    "bee-menu": "^0.1.7",
-    "bee-panel": "^0.2.7",
     "bee-transition": "latest",
     "classnames": "^2.2.5",
     "console-polyfill": "^0.2.2",
     "dom-scroll-into-view": "^1.2.1",
-    "tinper-bee-core": "^0.2.9"
+    "tinper-bee-core": "latest"
+  },
+  "peerDependencies": {
+    "react": "^15.3.0 || ^16.0",
+    "react-dom": "^15.3.0 || ^16.0",
+    "prop-types": "15.6.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
-    "react": "15.3.2",
     "prop-types": "^15.5.10",
     "react-addons-test-utils": "15.3.2",
-    "react-dom": "15.3.2",
     "console-polyfill": "~0.2.1",
     "es5-shim": "~4.1.10",
     "bee-panel": "latest",

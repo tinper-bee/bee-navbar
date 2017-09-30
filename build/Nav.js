@@ -49,19 +49,19 @@ var propTypes = {
    * Marks the NavItem with a matching `eventKey` as active. Has a
    * higher precedence over `activeHref`.
    */
-  activeKey: _react2["default"].PropTypes.any,
+  activeKey: _propTypes2["default"].any,
 
   /**
    * Marks the child NavItem with a matching `href` prop as active.
    */
-  activeHref: _react2["default"].PropTypes.string,
+  activeHref: _propTypes2["default"].string,
 
   /**
    * NavItems are be positioned vertically.
    */
-  stacked: _react2["default"].PropTypes.bool,
+  stacked: _propTypes2["default"].bool,
 
-  justified: (0, _tinperBeeCore.all)(_react2["default"].PropTypes.bool, function (_ref) {
+  justified: (0, _tinperBeeCore.all)(_propTypes2["default"].bool, function (_ref) {
     var justified = _ref.justified,
         navbar = _ref.navbar;
     return justified && navbar ? Error('justified navbar `Nav`s are not supported') : null;
@@ -77,25 +77,25 @@ var propTypes = {
    * )
    * ```
    */
-  onSelect: _react2["default"].PropTypes.func,
+  onSelect: _propTypes2["default"].func,
 
   /**
    * Apply styling an alignment for use in a Navbar. This prop will be set
    * automatically when the Nav is used inside a Navbar.
    */
-  navbar: _react2["default"].PropTypes.bool,
+  navbar: _propTypes2["default"].bool,
 
   /**
    * Float the Nav to the right. When `navbar` is `true` the appropriate
    * contextual classes are added as well.
    */
-  pullRight: _react2["default"].PropTypes.bool,
+  pullRight: _propTypes2["default"].bool,
 
   /**
    * Float the Nav to the left. When `navbar` is `true` the appropriate
    * contextual classes are added as well.
    */
-  pullLeft: _react2["default"].PropTypes.bool
+  pullLeft: _propTypes2["default"].bool
 };
 
 var defaultProps = {

@@ -33,14 +33,14 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
 var propTypes = {
-  active: _react2["default"].PropTypes.bool,
-  disabled: _react2["default"].PropTypes.bool,
-  role: _react2["default"].PropTypes.string,
-  href: _react2["default"].PropTypes.string,
-  skey: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.element, _react2["default"].PropTypes.string, _react2["default"].PropTypes.number]),
-  onClick: _react2["default"].PropTypes.func,
-  eventKey: _react2["default"].PropTypes.any,
-  children: _react2["default"].PropTypes.oneOfType([_react2["default"].PropTypes.element, _react2["default"].PropTypes.string, _react2["default"].PropTypes.node])
+  active: _propTypes2["default"].bool,
+  disabled: _propTypes2["default"].bool,
+  role: _propTypes2["default"].string,
+  href: _propTypes2["default"].string,
+  skey: _propTypes2["default"].oneOfType([_propTypes2["default"].element, _propTypes2["default"].string, _propTypes2["default"].number]),
+  onClick: _propTypes2["default"].func,
+  eventKey: _propTypes2["default"].any,
+  children: _propTypes2["default"].oneOfType([_propTypes2["default"].element, _propTypes2["default"].string, _propTypes2["default"].node])
 };
 
 var defaultProps = {

@@ -4,18 +4,8 @@ import { Panel } from 'bee-panel';
 import Button from 'bee-button';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import Navbar from '../src';
-import FormControl from 'bee-form-control';
-import Icon from 'bee-icon';
-import Badge from 'bee-badge';
 
 
-const NavItem = Navbar.NavItem;
-const Header = Navbar.Header;
-const Brand = Navbar.Brand;
-const Collapse = Navbar.Collapse;
-const Toggle = Navbar.Toggle;
-const Nav = Navbar.Nav;
 
 const CARET = <i className="uf uf-arrow-down"></i>;
 

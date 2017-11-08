@@ -1,12 +1,11 @@
-// TODO: Remove this pragma once we upgrade eslint-config-airbnb.
-/* eslint-disable react/no-multi-comp */
+
 
 import classnames from 'classnames';
 import React from 'react';
 import PropTypes from 'prop-types';
-import { elementType } from 'tinper-bee-core';
+import elementType from 'tinper-bee-core/lib/elementType';
 
-import {Con} from 'bee-layout';
+import Con from 'bee-layout/build/Layout';
 import NavbarBrand from './NavbarBrand';
 import NavbarCollapse from './NavbarCollapse';
 import NavbarHeader from './NavbarHeader';

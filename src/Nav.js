@@ -1,11 +1,8 @@
 import classNames from 'classnames';
 import React, { cloneElement } from 'react';
 import PropTypes from 'prop-types';
-import ReactDOM from 'react-dom';
-import { all } from 'tinper-bee-core';
-//import warning from 'warning';
+import all from 'tinper-bee-core/lib/all';
 
-import { createChainedFunction } from 'tinper-bee-core';
 
 // TODO: Should we expose `<NavItem>` as `<Nav.Item>`?
 

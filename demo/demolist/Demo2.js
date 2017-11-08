@@ -33,18 +33,21 @@ class Demo2 extends Component {
         }
     }
 
-    onToggle(value) {
+    onToggle = (value) => {
         this.setState({expanded: value});
     }
 
-    handleSelect(index) {
+    handleSelect = (index) => {
         this.setState({selectedkey: index});
     }
 
     render() {
         return (
             <div>
-                <Navbar inverse expanded={this.state.expanded} onToggle={this.onToggle.bind(this)}>
+                <Navbar
+                    inverse
+                    expanded={this.state.expanded}
+                    onToggle={this.onToggle}>
                     <Header>
                         <Brand>
                             <a href="#">React-FED</a>
@@ -53,7 +56,9 @@ class Demo2 extends Component {
                     </Header>
 
                     <Collapse>
-                        <Nav selectedkey={this.state.selectedkey} onSelect={this.handleSelect.bind(this)}>
+                        <Nav
+                            selectedkey={this.state.selectedkey}
+                            onSelect={this.handleSelect}>
                             <NavItem eventKey={1}>选项</NavItem>
                             <NavItem href="#" eventKey={2}>
                                 选项

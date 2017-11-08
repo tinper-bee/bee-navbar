@@ -14,11 +14,9 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _classnames = require('classnames');
+var _Collapse = require('bee-transition/build/Collapse');
 
-var _classnames2 = _interopRequireDefault(_classnames);
-
-var _beeTransition = require('bee-transition');
+var _Collapse2 = _interopRequireDefault(_Collapse);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
 
@@ -59,10 +57,8 @@ var NavbarCollapse = function (_React$Component) {
 
     var navbarProps = this.context.u_navbar;
 
-    var classes = { 'collapse': true, 'in': navbarProps.expanded };
-
     return _react2["default"].createElement(
-      _beeTransition.Collapse,
+      _Collapse2["default"],
       _extends({ 'in': navbarProps.expanded }, props),
       _react2["default"].createElement(
         'div',

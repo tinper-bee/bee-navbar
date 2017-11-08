@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classnames from 'classnames';
-import  { Collapse }  from 'bee-transition';
+import Collapse from 'bee-transition/build/Collapse';
 
 const contextTypes = {
   u_navbar: PropTypes.shape({
@@ -16,8 +15,6 @@ class NavbarCollapse extends React.Component {
   render() {
     const { children,clsPrefix, ...props } = this.props;
     const navbarProps = this.context.u_navbar;
-
-    let classes = {'collapse':true,'in':navbarProps.expanded};
 
     return (
       <Collapse in={navbarProps.expanded} {...props}>

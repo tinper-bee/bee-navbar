@@ -18,9 +18,13 @@ var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
 
-var _tinperBeeCore = require('tinper-bee-core');
+var _elementType = require('tinper-bee-core/lib/elementType');
 
-var _beeLayout = require('bee-layout');
+var _elementType2 = _interopRequireDefault(_elementType);
+
+var _Layout = require('bee-layout/build/Layout');
+
+var _Layout2 = _interopRequireDefault(_Layout);
 
 var _NavbarBrand = require('./NavbarBrand');
 
@@ -56,8 +60,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); } // TODO: Remove this pragma once we upgrade eslint-config-airbnb.
-/* eslint-disable react/no-multi-comp */
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : _defaults(subClass, superClass); }
 
 //import NavDropdown from './NavDropdown';
 
@@ -89,7 +92,7 @@ var propTypes = {
   /**
    * Set a custom element for this component.
    */
-  componentClass: _tinperBeeCore.elementType,
+  componentClass: _elementType2["default"],
   /**
    * A callback fired when the `<Navbar>` body collapses or expands. Fired when
    * a `<Navbar.Toggle>` is clicked and called with the new `navExpanded`
@@ -202,7 +205,7 @@ var Navbar = function (_React$Component) {
         className: (0, _classnames2["default"])(className, classNames)
       }),
       _react2["default"].createElement(
-        _beeLayout.Con,
+        _Layout2["default"],
         { fluid: fluid },
         children
       )
@@ -239,7 +242,7 @@ function createSimpleWrapper(tag, suffix, displayName) {
   Wrapper.displayName = displayName;
 
   Wrapper.propTypes = {
-    componentClass: _tinperBeeCore.elementType,
+    componentClass: _elementType2["default"],
     pullRight: _propTypes2["default"].bool,
     pullLeft: _propTypes2["default"].bool
   };

@@ -18,8 +18,6 @@ import Navbar from '../../src';
 const NavItem = Navbar.NavItem;
 const Header = Navbar.Header;
 const Brand = Navbar.Brand;
-const Collapse = Navbar.Collapse;
-const Toggle = Navbar.Toggle;
 const Nav = Navbar.Nav;
 
 class Demo1 extends Component {
@@ -29,7 +27,7 @@ class Demo1 extends Component {
             selectedkey: 1
         }
     }
-    handleSelect(index) {
+    handleSelect = (index) => {
         this.setState({selectedkey: index});
     }   
     render() {
@@ -41,7 +39,9 @@ class Demo1 extends Component {
                             <a href="#">React-FED</a>
                         </Brand>
                     </Header>
-                    <Nav selectedkey={this.state.selectedkey} onSelect={this.handleSelect.bind(this)}>
+                    <Nav
+                        selectedkey={this.state.selectedkey}
+                        onSelect={this.handleSelect}>
                         <NavItem eventKey={1}>选项1</NavItem>
                         <NavItem eventKey={2}>
                             选项2

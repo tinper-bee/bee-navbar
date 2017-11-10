@@ -243,8 +243,7 @@ a {
     float: left;
     padding: 15px;
     font-size: 18px;
-    line-height: 20px;
-    height: 50px; }
+    line-height: inherit; }
   .u-navbar .u-navbar-nav .u-navbar > li > a {
     padding-top: 10px;
     padding-bottom: 10px;

@@ -32,7 +32,7 @@ class Demo1 extends Component {
     }   
     render() {
         return (
-            <div>
+            <div className="demo-container">
                 <Navbar>
                     <Header>
                         <Brand>

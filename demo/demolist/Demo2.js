@@ -43,7 +43,7 @@ class Demo2 extends Component {
 
     render() {
         return (
-            <div>
+            <div className="demo-container">
                 <Navbar
                     inverse
                     expanded={this.state.expanded}

@@ -138,17 +138,17 @@ a{
             display: none;
         }
         .#{$clsPrefix}-collapse.collapse {
-            display: block!important;
-            height: auto!important;
+            display: block;
+            height: auto;
             padding-bottom: 0;
-            overflow: visible!important;
+            overflow: visible;
         }
         .#{$clsPrefix}-right {
-            float: right!important;
+            float: right;
             margin-right: -15px;
         }
         .#{$clsPrefix}-left {
-            float: left!important;
+            float: left;
         }
         .#{$clsPrefix}-nav {
             float: left;
